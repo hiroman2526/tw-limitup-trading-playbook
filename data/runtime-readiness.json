@@ -1,39 +1,33 @@
 {
   "schema_version": "p2.20.1",
-  "checked_at": "2026-09-23T23:06:03.489722+08:00",
-  "phase": "afterhours",
-  "status": "ok_with_publish_deferred",
+  "checked_at": "2026-09-24T07:07:07.351693+08:00",
+  "phase": "d1",
+  "status": "ok",
   "errors": [],
   "versions": {
     "data": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-market-data",
       "exists": true,
-      "before_commit": "c5a8e3923319957118af1653e10aeabcb8ec940f",
+      "before_commit": "1a716b8daa8e483c9ceecb06e08b3c70abe2cc8c",
       "dirty_before_sync": false,
-      "ignored_generated_changes_before_sync": [
-        "data/reference/twse_holiday_calendar_2026.json"
-      ],
-      "sync_exit_code": 1,
-      "sync_message": "fatal: could not read Username for 'https://github.com': Device not configured",
-      "commit": "c5a8e3923319957118af1653e10aeabcb8ec940f",
-      "origin_main": "c5a8e3923319957118af1653e10aeabcb8ec940f",
+      "ignored_generated_changes_before_sync": [],
+      "sync_exit_code": 0,
+      "sync_message": "Already up to date.",
+      "commit": "1a716b8daa8e483c9ceecb06e08b3c70abe2cc8c",
+      "origin_main": "1a716b8daa8e483c9ceecb06e08b3c70abe2cc8c",
       "dirty_after_sync": false,
-      "ignored_generated_changes_after_sync": [
-        "data/reference/twse_holiday_calendar_2026.json"
-      ]
+      "ignored_generated_changes_after_sync": []
     },
     "pages": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook",
       "exists": true,
-      "before_commit": "cf8ad13ce0901addebc6d578ecd521594eb99327",
+      "before_commit": "203c9507103ee24af0d7dd7357b693c6b8cb0900",
       "dirty_before_sync": false,
       "ignored_generated_changes_before_sync": [],
       "sync_exit_code": 0,
-      "sync_message": "Current branch main is up to date.",
-      "commit": "cf8ad13ce0901addebc6d578ecd521594eb99327",
-      "origin_main": "6b3cfc82aac2c874d5d4c7aebc194c1b551796d4",
-      "recovery_push_exit_code": 128,
-      "recovery_push_message": "fatal: could not read Username for 'https://github.com': Device not configured",
+      "sync_message": "Already up to date.",
+      "commit": "203c9507103ee24af0d7dd7357b693c6b8cb0900",
+      "origin_main": "203c9507103ee24af0d7dd7357b693c6b8cb0900",
       "dirty_after_sync": false,
       "ignored_generated_changes_after_sync": []
     }
