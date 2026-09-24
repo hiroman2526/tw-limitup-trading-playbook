@@ -1,7 +1,7 @@
 {
   "schema_version": "p2.20.1",
-  "checked_at": "2026-09-24T09:10:03.565219+08:00",
-  "phase": "d1",
+  "checked_at": "2026-09-24T15:20:02.639898+08:00",
+  "phase": "afterhours",
   "status": "ok",
   "errors": [],
   "versions": {
@@ -10,24 +10,28 @@
       "exists": true,
       "before_commit": "1a716b8daa8e483c9ceecb06e08b3c70abe2cc8c",
       "dirty_before_sync": false,
-      "ignored_generated_changes_before_sync": [],
+      "ignored_generated_changes_before_sync": [
+        "data/reference/twse_holiday_calendar_2026.json"
+      ],
       "sync_exit_code": 0,
       "sync_message": "Already up to date.",
       "commit": "1a716b8daa8e483c9ceecb06e08b3c70abe2cc8c",
       "origin_main": "1a716b8daa8e483c9ceecb06e08b3c70abe2cc8c",
       "dirty_after_sync": false,
-      "ignored_generated_changes_after_sync": []
+      "ignored_generated_changes_after_sync": [
+        "data/reference/twse_holiday_calendar_2026.json"
+      ]
     },
     "pages": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook",
       "exists": true,
-      "before_commit": "2b8ffa72d5de219c709d0c9eb6f98e650a3d9877",
+      "before_commit": "678ded74bf0a52e46902535a0503fec1eb5d7a92",
       "dirty_before_sync": false,
       "ignored_generated_changes_before_sync": [],
       "sync_exit_code": 0,
       "sync_message": "Already up to date.",
-      "commit": "2b8ffa72d5de219c709d0c9eb6f98e650a3d9877",
-      "origin_main": "2b8ffa72d5de219c709d0c9eb6f98e650a3d9877",
+      "commit": "678ded74bf0a52e46902535a0503fec1eb5d7a92",
+      "origin_main": "678ded74bf0a52e46902535a0503fec1eb5d7a92",
       "dirty_after_sync": false,
       "ignored_generated_changes_after_sync": []
     }
