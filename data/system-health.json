@@ -3,109 +3,88 @@
     "d1": {
       "schema_version": "p2.20.3",
       "phase": "d1",
-      "date": "2026-09-24",
-      "scheduled_at": "2026-09-24T09:16:00+08:00",
-      "checked_at": "2026-09-24T09:20:02.704861+08:00",
-      "actual_finished_at": "2026-09-24T09:16:15.577993+08:00",
-      "status": "ok",
-      "failed_step": null,
-      "reasons": [],
+      "date": "2026-09-25",
+      "scheduled_at": "2026-09-25T09:16:00+08:00",
+      "checked_at": "2026-09-25T09:20:03.214922+08:00",
+      "actual_finished_at": "2026-09-25T09:17:35.380800+08:00",
+      "status": "failed",
+      "failed_step": "retry",
+      "reasons": [
+        "沒有前一日候選資料，無須產生 D1 判斷",
+        "主排程重試後仍失敗"
+      ],
       "steps": {
         "dashboard_data": {
-          "status": "ok",
-          "detail": "D1 09:15 判斷已完成"
-        },
-        "regime_evidence": {
-          "status": "ok",
-          "detail": "09:15 大盤證據與 Dashboard／個股判斷一致"
+          "status": "skipped",
+          "detail": "沒有前一日候選資料，無須產生 D1 判斷"
         },
         "retry": {
-          "status": "ok",
-          "detail": "第一次完成"
+          "status": "failed",
+          "detail": "主排程重試後仍失敗"
         },
         "freshness": {
           "status": "ok",
           "detail": "交易日曆與資料新鮮度已更新"
-        },
-        "pages_git": {
-          "status": "ok",
-          "detail": "GitHub main 已同步"
-        },
-        "public_dashboard": {
-          "status": "ok",
-          "detail": "看盤頁與每日資料均可公開讀取"
-        },
-        "telegram": {
-          "status": "ok",
-          "detail": "交易摘要已送達"
         }
       },
       "versions": {
         "preflight_data_commit": "1a716b8daa8e483c9ceecb06e08b3c70abe2cc8c",
-        "preflight_pages_commit": "2b8ffa72d5de219c709d0c9eb6f98e650a3d9877",
-        "pages_local_commit": "15991607c08b60f880a27dc4b91cb7b9105cbd21",
-        "pages_remote_commit": "15991607c08b60f880a27dc4b91cb7b9105cbd21",
-        "data_runtime_commit": "1a716b8daa8e483c9ceecb06e08b3c70abe2cc8c"
+        "preflight_pages_commit": "e198253a8c648555d8e1a1112f24502bd7d6efc0"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "d1",
-        "date": "2026-09-24",
-        "status": "ok",
-        "retry_delay_seconds": 0,
+        "date": "2026-09-25",
+        "status": "failed",
+        "retry_delay_seconds": 90,
         "attempts": [
           {
             "attempt": 1,
-            "started_at": "2026-09-24T09:16:05.096375+08:00",
-            "finished_at": "2026-09-24T09:16:15.577993+08:00",
-            "exit_code": 0,
-            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   794cd68..1599160  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-09-24\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main 1599160] data: publish D1 09:15 decision\\n 1 file changed, 104 insertions(+), 15 deletions(-)\", \"recorded_at\": \"2026-09-24T09:16:13.649704+08:00\"}\n",
-            "stderr_tail": ""
+            "started_at": "2026-09-25T09:16:04.573649+08:00",
+            "finished_at": "2026-09-25T09:16:04.823041+08:00",
+            "exit_code": 1,
+            "stdout_tail": "",
+            "stderr_tail": "Traceback (most recent call last):\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 313, in <module>\n    main()\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 211, in main\n    regime = classify_0915(fetch_taiex_intraday(), args.decision_date)\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/intraday_regime.py\", line 57, in classify_0915\n    raise ValueError(\"TAIEX payload date {} != {}\".format(iso_date, expected_date))\nValueError: TAIEX payload date 2026-09-24 != 2026-09-25\n"
+          },
+          {
+            "attempt": 2,
+            "started_at": "2026-09-25T09:17:34.950661+08:00",
+            "finished_at": "2026-09-25T09:17:35.380800+08:00",
+            "exit_code": 1,
+            "stdout_tail": "",
+            "stderr_tail": "Traceback (most recent call last):\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 313, in <module>\n    main()\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 211, in main\n    regime = classify_0915(fetch_taiex_intraday(), args.decision_date)\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/intraday_regime.py\", line 57, in classify_0915\n    raise ValueError(\"TAIEX payload date {} != {}\".format(iso_date, expected_date))\nValueError: TAIEX payload date 2026-09-24 != 2026-09-25\n"
           }
         ],
-        "recorded_at": "2026-09-24T09:16:15.578051+08:00"
+        "recorded_at": "2026-09-25T09:17:35.380819+08:00"
       },
-      "publication": {
-        "status": "published",
-        "failed_step": null,
-        "reason": "",
-        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   794cd68..1599160  main -> main",
-        "schema_version": "p2.20.4",
-        "phase": "d1",
-        "date": "2026-09-24",
-        "local_data_saved": true,
-        "local_commit_created": true,
-        "local_commit_detail": "[main 1599160] data: publish D1 09:15 decision\n 1 file changed, 104 insertions(+), 15 deletions(-)",
-        "recorded_at": "2026-09-24T09:16:13.649704+08:00"
-      },
+      "publication": {},
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-09-24T09:20:02.743757+08:00",
-        "as_of_date": "2026-09-24",
+        "checked_at": "2026-09-25T09:20:03.263674+08:00",
+        "as_of_date": "2026-09-25",
         "calendar_source": "official_live",
         "market_day": {
-          "date": "2026-09-24",
-          "status": "trading",
-          "source": "weekday",
-          "reason": "一般交易日"
+          "date": "2026-09-25",
+          "status": "closed",
+          "source": "twse_calendar",
+          "reason": "中秋節"
         },
-        "previous_trading_date": "2026-09-23",
+        "previous_trading_date": "2026-09-24",
         "next_trading_date": "2026-09-29",
-        "latest_data_date": "2026-09-23",
-        "expected_latest_data_date": "2026-09-23",
+        "latest_data_date": "2026-09-24",
+        "expected_latest_data_date": "2026-09-24",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
-            "due": true,
-            "ready": true
+            "due": false,
+            "ready": null
           },
           "afterhours": {
             "due": false,
             "ready": null
           }
         }
-      },
-      "telegram_delivery_status": "sent"
+      }
     },
     "afterhours": {
       "schema_version": "p2.20.3",
