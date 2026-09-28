@@ -1,13 +1,13 @@
 {
   "schema_version": "p2.21",
-  "checked_at": "2026-09-25T15:45:03.328517+08:00",
-  "as_of_date": "2026-09-25",
+  "checked_at": "2026-09-28T09:20:05.605196+08:00",
+  "as_of_date": "2026-09-28",
   "calendar_source": "official_live",
   "market_day": {
-    "date": "2026-09-25",
+    "date": "2026-09-28",
     "status": "closed",
     "source": "twse_calendar",
-    "reason": "中秋節"
+    "reason": "孔子誕辰紀念日/ 教師節"
   },
   "previous_trading_date": "2026-09-24",
   "next_trading_date": "2026-09-29",

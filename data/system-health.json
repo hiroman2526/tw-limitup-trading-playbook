@@ -3,10 +3,10 @@
     "d1": {
       "schema_version": "p2.20.3",
       "phase": "d1",
-      "date": "2026-09-25",
-      "scheduled_at": "2026-09-25T09:16:00+08:00",
-      "checked_at": "2026-09-25T09:20:03.214922+08:00",
-      "actual_finished_at": "2026-09-25T09:17:35.380800+08:00",
+      "date": "2026-09-28",
+      "scheduled_at": "2026-09-28T09:16:00+08:00",
+      "checked_at": "2026-09-28T09:20:05.569554+08:00",
+      "actual_finished_at": "2026-09-28T09:17:36.066165+08:00",
       "status": "failed",
       "failed_step": "retry",
       "reasons": [
@@ -29,45 +29,45 @@
       },
       "versions": {
         "preflight_data_commit": "1a716b8daa8e483c9ceecb06e08b3c70abe2cc8c",
-        "preflight_pages_commit": "e198253a8c648555d8e1a1112f24502bd7d6efc0"
+        "preflight_pages_commit": "013dd49a59dbda4a710634c8daddb471dc506aff"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "d1",
-        "date": "2026-09-25",
+        "date": "2026-09-28",
         "status": "failed",
         "retry_delay_seconds": 90,
         "attempts": [
           {
             "attempt": 1,
-            "started_at": "2026-09-25T09:16:04.573649+08:00",
-            "finished_at": "2026-09-25T09:16:04.823041+08:00",
+            "started_at": "2026-09-28T09:16:05.540665+08:00",
+            "finished_at": "2026-09-28T09:16:05.710416+08:00",
             "exit_code": 1,
             "stdout_tail": "",
-            "stderr_tail": "Traceback (most recent call last):\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 313, in <module>\n    main()\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 211, in main\n    regime = classify_0915(fetch_taiex_intraday(), args.decision_date)\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/intraday_regime.py\", line 57, in classify_0915\n    raise ValueError(\"TAIEX payload date {} != {}\".format(iso_date, expected_date))\nValueError: TAIEX payload date 2026-09-24 != 2026-09-25\n"
+            "stderr_tail": "Traceback (most recent call last):\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 313, in <module>\n    main()\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 211, in main\n    regime = classify_0915(fetch_taiex_intraday(), args.decision_date)\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/intraday_regime.py\", line 57, in classify_0915\n    raise ValueError(\"TAIEX payload date {} != {}\".format(iso_date, expected_date))\nValueError: TAIEX payload date 2026-09-24 != 2026-09-28\n"
           },
           {
             "attempt": 2,
-            "started_at": "2026-09-25T09:17:34.950661+08:00",
-            "finished_at": "2026-09-25T09:17:35.380800+08:00",
+            "started_at": "2026-09-28T09:17:35.720487+08:00",
+            "finished_at": "2026-09-28T09:17:36.066165+08:00",
             "exit_code": 1,
             "stdout_tail": "",
-            "stderr_tail": "Traceback (most recent call last):\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 313, in <module>\n    main()\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 211, in main\n    regime = classify_0915(fetch_taiex_intraday(), args.decision_date)\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/intraday_regime.py\", line 57, in classify_0915\n    raise ValueError(\"TAIEX payload date {} != {}\".format(iso_date, expected_date))\nValueError: TAIEX payload date 2026-09-24 != 2026-09-25\n"
+            "stderr_tail": "Traceback (most recent call last):\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 313, in <module>\n    main()\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 211, in main\n    regime = classify_0915(fetch_taiex_intraday(), args.decision_date)\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/intraday_regime.py\", line 57, in classify_0915\n    raise ValueError(\"TAIEX payload date {} != {}\".format(iso_date, expected_date))\nValueError: TAIEX payload date 2026-09-24 != 2026-09-28\n"
           }
         ],
-        "recorded_at": "2026-09-25T09:17:35.380819+08:00"
+        "recorded_at": "2026-09-28T09:17:36.066195+08:00"
       },
       "publication": {},
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-09-25T09:20:03.263674+08:00",
-        "as_of_date": "2026-09-25",
+        "checked_at": "2026-09-28T09:20:05.605196+08:00",
+        "as_of_date": "2026-09-28",
         "calendar_source": "official_live",
         "market_day": {
-          "date": "2026-09-25",
+          "date": "2026-09-28",
           "status": "closed",
           "source": "twse_calendar",
-          "reason": "中秋節"
+          "reason": "孔子誕辰紀念日/ 教師節"
         },
         "previous_trading_date": "2026-09-24",
         "next_trading_date": "2026-09-29",
