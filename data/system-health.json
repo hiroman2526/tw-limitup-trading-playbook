@@ -3,10 +3,10 @@
     "d1": {
       "schema_version": "p2.20.3",
       "phase": "d1",
-      "date": "2026-09-29",
-      "scheduled_at": "2026-09-29T09:16:00+08:00",
-      "checked_at": "2026-09-29T09:20:04.734951+08:00",
-      "actual_finished_at": "2026-09-29T09:16:14.946820+08:00",
+      "date": "2026-10-01",
+      "scheduled_at": "2026-10-01T09:16:00+08:00",
+      "checked_at": "2026-10-01T09:20:04.780968+08:00",
+      "actual_finished_at": "2026-10-01T09:16:28.672925+08:00",
       "status": "ok",
       "failed_step": null,
       "reasons": [],
@@ -41,58 +41,58 @@
         }
       },
       "versions": {
-        "preflight_data_commit": "1a716b8daa8e483c9ceecb06e08b3c70abe2cc8c",
-        "preflight_pages_commit": "17f8f712d5e6a332d6ea502d5a0573c68d075faf",
-        "pages_local_commit": "8162426da2498bad79979d50819e39ad984a0599",
-        "pages_remote_commit": "8162426da2498bad79979d50819e39ad984a0599",
-        "data_runtime_commit": "1a716b8daa8e483c9ceecb06e08b3c70abe2cc8c"
+        "preflight_data_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781",
+        "preflight_pages_commit": "e7534137997d1e867bfcc6b3b5753ae198845e0e",
+        "pages_local_commit": "8a1d69bef9059dba04aa0f4406161aa11f30bae6",
+        "pages_remote_commit": "8a1d69bef9059dba04aa0f4406161aa11f30bae6",
+        "data_runtime_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "d1",
-        "date": "2026-09-29",
+        "date": "2026-10-01",
         "status": "ok",
         "retry_delay_seconds": 0,
         "attempts": [
           {
             "attempt": 1,
-            "started_at": "2026-09-29T09:16:03.721166+08:00",
-            "finished_at": "2026-09-29T09:16:14.946820+08:00",
+            "started_at": "2026-10-01T09:16:04.756682+08:00",
+            "finished_at": "2026-10-01T09:16:28.672925+08:00",
             "exit_code": 0,
-            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   e7ae5d4..8162426  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-09-29\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main 8162426] data: publish D1 09:15 decision\\n 1 file changed, 154 insertions(+), 19 deletions(-)\", \"recorded_at\": \"2026-09-29T09:16:13.033209+08:00\"}\n",
+            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   0af4b11..8a1d69b  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-10-01\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main 8a1d69b] data: publish D1 09:15 decision\\n 1 file changed, 355 insertions(+), 34 deletions(-)\", \"recorded_at\": \"2026-10-01T09:16:26.751224+08:00\"}\n",
             "stderr_tail": ""
           }
         ],
-        "recorded_at": "2026-09-29T09:16:14.946902+08:00"
+        "recorded_at": "2026-10-01T09:16:28.672985+08:00"
       },
       "publication": {
         "status": "published",
         "failed_step": null,
         "reason": "",
-        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   e7ae5d4..8162426  main -> main",
+        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   0af4b11..8a1d69b  main -> main",
         "schema_version": "p2.20.4",
         "phase": "d1",
-        "date": "2026-09-29",
+        "date": "2026-10-01",
         "local_data_saved": true,
         "local_commit_created": true,
-        "local_commit_detail": "[main 8162426] data: publish D1 09:15 decision\n 1 file changed, 154 insertions(+), 19 deletions(-)",
-        "recorded_at": "2026-09-29T09:16:13.033209+08:00"
+        "local_commit_detail": "[main 8a1d69b] data: publish D1 09:15 decision\n 1 file changed, 355 insertions(+), 34 deletions(-)",
+        "recorded_at": "2026-10-01T09:16:26.751224+08:00"
       },
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-09-29T09:20:04.776696+08:00",
-        "as_of_date": "2026-09-29",
+        "checked_at": "2026-10-01T09:20:04.821716+08:00",
+        "as_of_date": "2026-10-01",
         "calendar_source": "official_live",
         "market_day": {
-          "date": "2026-09-29",
+          "date": "2026-10-01",
           "status": "trading",
           "source": "weekday",
           "reason": "一般交易日"
         },
-        "previous_trading_date": "2026-09-24",
-        "next_trading_date": "2026-09-30",
-        "latest_data_date": "2026-09-24",
-        "expected_latest_data_date": "2026-09-24",
+        "previous_trading_date": "2026-09-30",
+        "next_trading_date": "2026-10-02",
+        "latest_data_date": "2026-09-30",
+        "expected_latest_data_date": "2026-09-30",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
