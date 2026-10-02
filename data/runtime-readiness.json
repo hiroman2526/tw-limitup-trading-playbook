@@ -1,9 +1,11 @@
 {
   "schema_version": "p2.20.1",
-  "checked_at": "2026-10-02T09:10:05.025370+08:00",
-  "phase": "d1",
-  "status": "ok",
-  "errors": [],
+  "checked_at": "2026-10-02T15:20:02.622620+08:00",
+  "phase": "afterhours",
+  "status": "failed",
+  "errors": [
+    "tw-limitup-trading-playbook 執行環境仍有未提交變更：data/daily/2026-10-01.json"
+  ],
   "versions": {
     "data": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-market-data",
@@ -25,14 +27,14 @@
     "pages": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook",
       "exists": true,
-      "before_commit": "2f9e3ea4016838d88c2a516ca5b79a841a9fe44b",
-      "dirty_before_sync": false,
+      "before_commit": "24c435767e4d12fa69c998dc894a1e47a35340ca",
+      "dirty_before_sync": true,
       "ignored_generated_changes_before_sync": [],
-      "sync_exit_code": 0,
-      "sync_message": "Already up to date.",
-      "commit": "2f9e3ea4016838d88c2a516ca5b79a841a9fe44b",
-      "origin_main": "2f9e3ea4016838d88c2a516ca5b79a841a9fe44b",
-      "dirty_after_sync": false,
+      "sync_exit_code": 128,
+      "sync_message": "error: cannot pull with rebase: You have unstaged changes.\nerror: Please commit or stash them.",
+      "commit": "24c435767e4d12fa69c998dc894a1e47a35340ca",
+      "origin_main": "435618e4049483767f1c1576bc5b8ce6c60b4c76",
+      "dirty_after_sync": true,
       "ignored_generated_changes_after_sync": []
     }
   }
