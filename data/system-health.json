@@ -3,111 +3,71 @@
     "d1": {
       "schema_version": "p2.20.3",
       "phase": "d1",
-      "date": "2026-10-02",
-      "scheduled_at": "2026-10-02T09:16:00+08:00",
-      "checked_at": "2026-10-02T09:20:05.465587+08:00",
-      "actual_finished_at": "2026-10-02T09:17:52.758166+08:00",
-      "status": "ok_with_retry_failure",
-      "failed_step": null,
-      "reasons": [],
+      "date": "2026-10-05",
+      "scheduled_at": "2026-10-05T09:16:00+08:00",
+      "checked_at": "2026-10-05T09:20:05.554441+08:00",
+      "actual_finished_at": "2026-10-05T09:16:01.481001+08:00",
+      "status": "failed",
+      "failed_step": "retry",
+      "reasons": [
+        "沒有前一日候選資料，無須產生 D1 判斷",
+        "主排程重試後仍失敗"
+      ],
       "steps": {
         "dashboard_data": {
-          "status": "ok",
-          "detail": "D1 09:15 判斷已完成"
-        },
-        "regime_evidence": {
-          "status": "ok",
-          "detail": "09:15 大盤證據與 Dashboard／個股判斷一致"
+          "status": "skipped",
+          "detail": "沒有前一日候選資料，無須產生 D1 判斷"
         },
         "retry": {
           "status": "failed",
-          "detail": "主排程未完成，但 D1 資料已產生"
+          "detail": "主排程重試後仍失敗"
         },
         "freshness": {
           "status": "ok",
           "detail": "交易日曆與資料新鮮度已更新"
-        },
-        "pages_git": {
-          "status": "ok",
-          "detail": "GitHub main 已同步"
-        },
-        "public_dashboard": {
-          "status": "ok",
-          "detail": "看盤頁與每日資料均可公開讀取"
-        },
-        "telegram": {
-          "status": "failed",
-          "detail": "Telegram 交易摘要未確認送達"
         }
       },
       "versions": {
         "preflight_data_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781",
-        "preflight_pages_commit": "2f9e3ea4016838d88c2a516ca5b79a841a9fe44b",
-        "pages_local_commit": "435618e4049483767f1c1576bc5b8ce6c60b4c76",
-        "pages_remote_commit": "435618e4049483767f1c1576bc5b8ce6c60b4c76",
-        "data_runtime_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781"
+        "preflight_pages_commit": "2e0a725b984ca1cef0b001ca157002d0808f00e6"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "d1",
-        "date": "2026-10-02",
-        "status": "failed",
-        "retry_delay_seconds": 90,
-        "attempts": [
-          {
-            "attempt": 1,
-            "started_at": "2026-10-02T09:16:03.048711+08:00",
-            "finished_at": "2026-10-02T09:16:19.720386+08:00",
-            "exit_code": 1,
-            "stdout_tail": "",
-            "stderr_tail": "D1 09:15 個股報價不完整（1 檔）；保留本次結果供重試，不發布 Dashboard。\n"
-          },
-          {
-            "attempt": 2,
-            "started_at": "2026-10-02T09:17:49.871083+08:00",
-            "finished_at": "2026-10-02T09:17:52.758166+08:00",
-            "exit_code": 1,
-            "stdout_tail": "",
-            "stderr_tail": "D1 09:15 個股報價不完整（1 檔）；保留本次結果供重試，不發布 Dashboard。\n"
-          }
-        ],
-        "recorded_at": "2026-10-02T09:17:52.758188+08:00"
+        "date": "2026-10-05",
+        "status": "blocked_preflight",
+        "reason": "預檢未通過：tw-limitup-trading-playbook 執行環境仍有未提交變更：data/daily/2026-10-01.json",
+        "attempts": [],
+        "recorded_at": "2026-10-05T09:16:01.481001+08:00"
       },
-      "operational_reasons": [
-        "主排程未完成，但 D1 資料已產生"
-      ],
       "publication": {},
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-10-02T09:20:05.505459+08:00",
-        "as_of_date": "2026-10-02",
+        "checked_at": "2026-10-05T09:20:05.593059+08:00",
+        "as_of_date": "2026-10-05",
         "calendar_source": "official_live",
         "market_day": {
-          "date": "2026-10-02",
+          "date": "2026-10-05",
           "status": "trading",
           "source": "weekday",
           "reason": "一般交易日"
         },
-        "previous_trading_date": "2026-10-01",
-        "next_trading_date": "2026-10-05",
+        "previous_trading_date": "2026-10-02",
+        "next_trading_date": "2026-10-06",
         "latest_data_date": "2026-10-01",
-        "expected_latest_data_date": "2026-10-01",
+        "expected_latest_data_date": "2026-10-02",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
             "due": true,
-            "ready": true
+            "ready": false
           },
           "afterhours": {
             "due": false,
             "ready": null
           }
         }
-      },
-      "notification_status": "failed",
-      "notification_reasons": [
-        "Telegram 交易摘要未確認送達"
-      ]
+      }
     },
     "afterhours": {
       "schema_version": "p2.20.3",
