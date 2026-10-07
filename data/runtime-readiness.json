@@ -1,7 +1,7 @@
 {
   "schema_version": "p2.20.1",
-  "checked_at": "2026-10-07T09:10:05.707981+08:00",
-  "phase": "d1",
+  "checked_at": "2026-10-07T15:20:06.001101+08:00",
+  "phase": "afterhours",
   "status": "failed",
   "errors": [
     "tw-limitup-trading-playbook 執行環境仍有未提交變更：data/daily/2026-10-01.json"
@@ -27,12 +27,12 @@
     "pages": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook",
       "exists": true,
-      "before_commit": "b34989c7fc08595806ea01e0286ed84e322c68ab",
+      "before_commit": "0b308327e7dc3aef3e5e384301b8a8d9732e8628",
       "dirty_before_sync": true,
       "ignored_generated_changes_before_sync": [],
       "sync_exit_code": 128,
       "sync_message": "error: cannot pull with rebase: You have unstaged changes.\nerror: Please commit or stash them.",
-      "commit": "b34989c7fc08595806ea01e0286ed84e322c68ab",
+      "commit": "0b308327e7dc3aef3e5e384301b8a8d9732e8628",
       "origin_main": "435618e4049483767f1c1576bc5b8ce6c60b4c76",
       "dirty_after_sync": true,
       "ignored_generated_changes_after_sync": []
