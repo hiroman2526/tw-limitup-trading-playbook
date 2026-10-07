@@ -3,10 +3,10 @@
     "d1": {
       "schema_version": "p2.20.3",
       "phase": "d1",
-      "date": "2026-10-06",
-      "scheduled_at": "2026-10-06T09:16:00+08:00",
-      "checked_at": "2026-10-06T09:20:04.895245+08:00",
-      "actual_finished_at": "2026-10-06T09:16:05.641671+08:00",
+      "date": "2026-10-07",
+      "scheduled_at": "2026-10-07T09:16:00+08:00",
+      "checked_at": "2026-10-07T09:20:03.469226+08:00",
+      "actual_finished_at": "2026-10-07T09:16:04.433357+08:00",
       "status": "failed",
       "failed_step": "retry",
       "reasons": [
@@ -29,33 +29,33 @@
       },
       "versions": {
         "preflight_data_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781",
-        "preflight_pages_commit": "81e37120d46ca1dbe0b372207a2b089a53b41707"
+        "preflight_pages_commit": "b34989c7fc08595806ea01e0286ed84e322c68ab"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "d1",
-        "date": "2026-10-06",
+        "date": "2026-10-07",
         "status": "blocked_preflight",
         "reason": "預檢未通過：tw-limitup-trading-playbook 執行環境仍有未提交變更：data/daily/2026-10-01.json",
         "attempts": [],
-        "recorded_at": "2026-10-06T09:16:05.641671+08:00"
+        "recorded_at": "2026-10-07T09:16:04.433357+08:00"
       },
       "publication": {},
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-10-06T09:20:04.935084+08:00",
-        "as_of_date": "2026-10-06",
+        "checked_at": "2026-10-07T09:20:03.525311+08:00",
+        "as_of_date": "2026-10-07",
         "calendar_source": "official_live",
         "market_day": {
-          "date": "2026-10-06",
+          "date": "2026-10-07",
           "status": "trading",
           "source": "weekday",
           "reason": "一般交易日"
         },
-        "previous_trading_date": "2026-10-05",
-        "next_trading_date": "2026-10-07",
+        "previous_trading_date": "2026-10-06",
+        "next_trading_date": "2026-10-08",
         "latest_data_date": "2026-10-01",
-        "expected_latest_data_date": "2026-10-05",
+        "expected_latest_data_date": "2026-10-06",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
