@@ -1,16 +1,16 @@
 {
   "schema_version": "p2.24",
   "rule_version": "p2.11_v2",
-  "decision_day_count": 28,
+  "decision_day_count": 29,
   "minimum_decision_days": 20,
   "status": "ready_for_review",
   "overall": {
-    "candidate_count": 114,
-    "settled_count": 70,
-    "avg_net_return": -0.012158658562865963,
-    "median_net_return": -0.011208209700747037,
-    "win_rate": 0.3142857142857143,
-    "stop_loss_rate": 0.07894736842105263,
+    "candidate_count": 120,
+    "settled_count": 75,
+    "avg_net_return": -0.012061034538067858,
+    "median_net_return": -0.008427408412483125,
+    "win_rate": 0.32,
+    "stop_loss_rate": 0.08333333333333333,
     "max_drawdown_equal_weight": -0.9612805896421834
   },
   "unsettled_count": 7,
@@ -60,12 +60,12 @@
   "splits": {
     "setup_type": {
       "B": {
-        "candidate_count": 114,
-        "settled_count": 70,
-        "avg_net_return": -0.012158658562865963,
-        "median_net_return": -0.011208209700747037,
-        "win_rate": 0.3142857142857143,
-        "stop_loss_rate": 0.07894736842105263,
+        "candidate_count": 120,
+        "settled_count": 75,
+        "avg_net_return": -0.012061034538067858,
+        "median_net_return": -0.008427408412483125,
+        "win_rate": 0.32,
+        "stop_loss_rate": 0.08333333333333333,
         "max_drawdown_equal_weight": -0.9612805896421834
       }
     },
@@ -80,12 +80,12 @@
         "max_drawdown_equal_weight": null
       },
       "NEUTRAL": {
-        "candidate_count": 80,
-        "settled_count": 67,
-        "avg_net_return": -0.012733634625852898,
-        "median_net_return": -0.01398901098901095,
-        "win_rate": 0.31343283582089554,
-        "stop_loss_rate": 0.1,
+        "candidate_count": 86,
+        "settled_count": 72,
+        "avg_net_return": -0.01259201404009189,
+        "median_net_return": -0.011208209700747037,
+        "win_rate": 0.3194444444444444,
+        "stop_loss_rate": 0.10465116279069768,
         "max_drawdown_equal_weight": -0.9166964312263418
       },
       "STRONG": {
@@ -109,12 +109,12 @@
     },
     "liquidity_tier": {
       "": {
-        "candidate_count": 114,
-        "settled_count": 70,
-        "avg_net_return": -0.012158658562865963,
-        "median_net_return": -0.011208209700747037,
-        "win_rate": 0.3142857142857143,
-        "stop_loss_rate": 0.07894736842105263,
+        "candidate_count": 120,
+        "settled_count": 75,
+        "avg_net_return": -0.012061034538067858,
+        "median_net_return": -0.008427408412483125,
+        "win_rate": 0.32,
+        "stop_loss_rate": 0.08333333333333333,
         "max_drawdown_equal_weight": -0.9612805896421834
       }
     },
@@ -138,13 +138,13 @@
         "max_drawdown_equal_weight": -0.4822439933103235
       },
       "True": {
-        "candidate_count": 56,
-        "settled_count": 38,
-        "avg_net_return": -0.012634802427667964,
-        "median_net_return": -0.014335626989832592,
-        "win_rate": 0.3157894736842105,
-        "stop_loss_rate": 0.05357142857142857,
-        "max_drawdown_equal_weight": -0.5192404224559556
+        "candidate_count": 62,
+        "settled_count": 43,
+        "avg_net_return": -0.012409162400136151,
+        "median_net_return": -0.01398901098901095,
+        "win_rate": 0.32558139534883723,
+        "stop_loss_rate": 0.06451612903225806,
+        "max_drawdown_equal_weight": -0.5391318271405309
       }
     },
     "d1_decision_status": {
@@ -176,12 +176,12 @@
         "max_drawdown_equal_weight": null
       },
       "WATCH": {
-        "candidate_count": 76,
-        "settled_count": 70,
-        "avg_net_return": -0.012158658562865963,
-        "median_net_return": -0.011208209700747037,
-        "win_rate": 0.3142857142857143,
-        "stop_loss_rate": 0.11842105263157894,
+        "candidate_count": 82,
+        "settled_count": 75,
+        "avg_net_return": -0.012061034538067858,
+        "median_net_return": -0.008427408412483125,
+        "win_rate": 0.32,
+        "stop_loss_rate": 0.12195121951219512,
         "max_drawdown_equal_weight": -0.9612805896421834
       }
     }
