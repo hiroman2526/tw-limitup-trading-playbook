@@ -3,10 +3,10 @@
     "d1": {
       "schema_version": "p2.20.3",
       "phase": "d1",
-      "date": "2026-10-15",
-      "scheduled_at": "2026-10-15T09:16:00+08:00",
-      "checked_at": "2026-10-15T09:20:05.849829+08:00",
-      "actual_finished_at": "2026-10-15T09:16:26.500174+08:00",
+      "date": "2026-10-16",
+      "scheduled_at": "2026-10-16T09:16:00+08:00",
+      "checked_at": "2026-10-16T09:20:05.524853+08:00",
+      "actual_finished_at": "2026-10-16T09:16:13.433559+08:00",
       "status": "ok",
       "failed_step": null,
       "reasons": [],
@@ -42,57 +42,57 @@
       },
       "versions": {
         "preflight_data_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781",
-        "preflight_pages_commit": "39fdcab5de3e679ccc742836a232ba9b1b58aed6",
-        "pages_local_commit": "0bb312805dabaf8f6e942381702d2bb062c4a790",
-        "pages_remote_commit": "0bb312805dabaf8f6e942381702d2bb062c4a790",
+        "preflight_pages_commit": "022a766614de1fa74848ca652c3f14c743c05b3e",
+        "pages_local_commit": "a0ca303dd3d08734fadf5b0c43a24903e93db189",
+        "pages_remote_commit": "a0ca303dd3d08734fadf5b0c43a24903e93db189",
         "data_runtime_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "d1",
-        "date": "2026-10-15",
+        "date": "2026-10-16",
         "status": "ok",
         "retry_delay_seconds": 0,
         "attempts": [
           {
             "attempt": 1,
-            "started_at": "2026-10-15T09:16:05.783886+08:00",
-            "finished_at": "2026-10-15T09:16:26.500174+08:00",
+            "started_at": "2026-10-16T09:16:05.487790+08:00",
+            "finished_at": "2026-10-16T09:16:13.433559+08:00",
             "exit_code": 0,
-            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   49fe895..0bb3128  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-10-15\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main 0bb3128] data: publish D1 09:15 decision\\n 1 file changed, 179 insertions(+), 21 deletions(-)\", \"recorded_at\": \"2026-10-15T09:16:24.522354+08:00\"}\n",
+            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   2932901..a0ca303  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-10-16\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main a0ca303] data: publish D1 09:15 decision\\n 1 file changed, 24 insertions(+), 8 deletions(-)\", \"recorded_at\": \"2026-10-16T09:16:11.432483+08:00\"}\n",
             "stderr_tail": ""
           }
         ],
-        "recorded_at": "2026-10-15T09:16:26.500236+08:00"
+        "recorded_at": "2026-10-16T09:16:13.433633+08:00"
       },
       "publication": {
         "status": "published",
         "failed_step": null,
         "reason": "",
-        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   49fe895..0bb3128  main -> main",
+        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   2932901..a0ca303  main -> main",
         "schema_version": "p2.20.4",
         "phase": "d1",
-        "date": "2026-10-15",
+        "date": "2026-10-16",
         "local_data_saved": true,
         "local_commit_created": true,
-        "local_commit_detail": "[main 0bb3128] data: publish D1 09:15 decision\n 1 file changed, 179 insertions(+), 21 deletions(-)",
-        "recorded_at": "2026-10-15T09:16:24.522354+08:00"
+        "local_commit_detail": "[main a0ca303] data: publish D1 09:15 decision\n 1 file changed, 24 insertions(+), 8 deletions(-)",
+        "recorded_at": "2026-10-16T09:16:11.432483+08:00"
       },
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-10-15T09:20:05.896787+08:00",
-        "as_of_date": "2026-10-15",
+        "checked_at": "2026-10-16T09:20:05.565316+08:00",
+        "as_of_date": "2026-10-16",
         "calendar_source": "official_live",
         "market_day": {
-          "date": "2026-10-15",
+          "date": "2026-10-16",
           "status": "trading",
           "source": "weekday",
           "reason": "一般交易日"
         },
-        "previous_trading_date": "2026-10-14",
-        "next_trading_date": "2026-10-16",
-        "latest_data_date": "2026-10-14",
-        "expected_latest_data_date": "2026-10-14",
+        "previous_trading_date": "2026-10-15",
+        "next_trading_date": "2026-10-19",
+        "latest_data_date": "2026-10-15",
+        "expected_latest_data_date": "2026-10-15",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
