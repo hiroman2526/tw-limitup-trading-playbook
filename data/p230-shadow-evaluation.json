@@ -42,10 +42,10 @@
     "p2.30_d1_confirmed_v1": {
       "label": "D1確認突破（影子）",
       "normal": {
-        "candidate_count": 139,
+        "candidate_count": 140,
         "confirmed_entry_count": 0,
         "settled_count": 0,
-        "no_entry_count": 69,
+        "no_entry_count": 70,
         "data_incomplete_count": 70,
         "average_net_return": null,
         "median_net_return": null,
@@ -56,10 +56,10 @@
         "largest_winner_profit_contribution": null
       },
       "stress": {
-        "candidate_count": 139,
+        "candidate_count": 140,
         "confirmed_entry_count": 0,
         "settled_count": 0,
-        "no_entry_count": 69,
+        "no_entry_count": 70,
         "data_incomplete_count": 70,
         "average_net_return": null,
         "median_net_return": null,
@@ -71,7 +71,7 @@
       },
       "gate": {
         "status": "collecting",
-        "decision_day_count": 20,
+        "decision_day_count": 21,
         "checks": {
           "at_least_60_decision_days": false,
           "at_least_30_settled_entries": false,
@@ -584,10 +584,10 @@
           "largest_winner_profit_contribution": null
         },
         "未分類": {
-          "candidate_count": 39,
+          "candidate_count": 40,
           "confirmed_entry_count": 0,
           "settled_count": 0,
-          "no_entry_count": 39,
+          "no_entry_count": 40,
           "data_incomplete_count": 0,
           "average_net_return": null,
           "median_net_return": null,
@@ -600,10 +600,10 @@
       },
       "sector_confirmation": {
         "False": {
-          "candidate_count": 99,
+          "candidate_count": 100,
           "confirmed_entry_count": 0,
           "settled_count": 0,
-          "no_entry_count": 52,
+          "no_entry_count": 53,
           "data_incomplete_count": 47,
           "average_net_return": null,
           "median_net_return": null,
@@ -644,10 +644,10 @@
           "largest_winner_profit_contribution": null
         },
         "資料不足": {
-          "candidate_count": 135,
+          "candidate_count": 136,
           "confirmed_entry_count": 0,
           "settled_count": 0,
-          "no_entry_count": 65,
+          "no_entry_count": 66,
           "data_incomplete_count": 70,
           "average_net_return": null,
           "median_net_return": null,

@@ -288,5 +288,64 @@
     "coverage_pct": 0.0,
     "source_counts": {},
     "missing_stock_ids": []
-  }
+  },
+  "paper_trading": {
+    "rule_version": "p2.11_v2",
+    "decision_date": "2026-10-16",
+    "candidate_count": 0,
+    "watch_count": 0,
+    "executed_count": 0,
+    "data_incomplete_count": 0,
+    "hold_review_count": 0,
+    "settled_count": 0,
+    "evidence_pending_count": 0,
+    "market_close_verified": false,
+    "output": "data/processed/p211_paper_trade_log.csv"
+  },
+  "paper_trading_records": [],
+  "p230_shadow": {
+    "schema_version": "p2.30.0",
+    "decision_date": "2026-10-16",
+    "baseline_rule_version": "p2.11_v2",
+    "shadow_rule_versions": [
+      "p2.30_d1_confirmed_v1",
+      "p2.30_d2_reclaim_hv_v1"
+    ],
+    "market_minute_verified": false,
+    "d1": {
+      "candidate_count": 1,
+      "confirmed_entry_count": 0,
+      "data_incomplete_count": 0
+    },
+    "d2": {
+      "active_watch_count": 0,
+      "confirmed_entry_count": 0,
+      "data_incomplete_count": 0
+    },
+    "allocated_count": 0,
+    "shadow_only": true,
+    "telegram_buy_alerts": false,
+    "minute_capture_attempts": []
+  },
+  "p230_shadow_records": [
+    {
+      "rule_version": "p2.30_d1_confirmed_v1",
+      "strategy": "D1確認突破",
+      "candidate_date": "2026-10-15",
+      "decision_date": "2026-10-16",
+      "stock_id": "3354",
+      "market": "TPEx",
+      "name": "律勝",
+      "industry": "電子零組件業",
+      "setup_type": "B",
+      "liquidity_tier": "FALLBACK_2000_4999",
+      "market_regime_0915": "",
+      "sector_confirmed": false,
+      "data_timestamp": "2026-10-16T09:15:00+08:00",
+      "data_source": "D0 event table",
+      "shadow_only": true,
+      "paper_status": "display_only",
+      "failure_reason": "liquidity_below_5000_lots"
+    }
+  ]
 }
