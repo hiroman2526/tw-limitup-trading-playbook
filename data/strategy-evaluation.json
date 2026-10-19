@@ -1,17 +1,17 @@
 {
   "schema_version": "p2.24",
   "rule_version": "p2.11_v2",
-  "decision_day_count": 29,
+  "decision_day_count": 30,
   "minimum_decision_days": 20,
   "status": "ready_for_review",
   "overall": {
-    "candidate_count": 120,
-    "settled_count": 75,
-    "avg_net_return": -0.012061034538067858,
-    "median_net_return": -0.008427408412483125,
-    "win_rate": 0.32,
-    "stop_loss_rate": 0.08333333333333333,
-    "max_drawdown_equal_weight": -0.9612805896421834
+    "candidate_count": 122,
+    "settled_count": 76,
+    "avg_net_return": -0.012683971324636356,
+    "median_net_return": -0.011208209700747037,
+    "win_rate": 0.3157894736842105,
+    "stop_loss_rate": 0.08196721311475409,
+    "max_drawdown_equal_weight": -1.0106133996197317
   },
   "unsettled_count": 7,
   "formal_review": {
@@ -60,13 +60,13 @@
   "splits": {
     "setup_type": {
       "B": {
-        "candidate_count": 120,
-        "settled_count": 75,
-        "avg_net_return": -0.012061034538067858,
-        "median_net_return": -0.008427408412483125,
-        "win_rate": 0.32,
-        "stop_loss_rate": 0.08333333333333333,
-        "max_drawdown_equal_weight": -0.9612805896421834
+        "candidate_count": 122,
+        "settled_count": 76,
+        "avg_net_return": -0.012683971324636356,
+        "median_net_return": -0.011208209700747037,
+        "win_rate": 0.3157894736842105,
+        "stop_loss_rate": 0.08196721311475409,
+        "max_drawdown_equal_weight": -1.0106133996197317
       }
     },
     "market_regime_0915": {
@@ -80,13 +80,13 @@
         "max_drawdown_equal_weight": null
       },
       "NEUTRAL": {
-        "candidate_count": 86,
-        "settled_count": 72,
-        "avg_net_return": -0.01259201404009189,
-        "median_net_return": -0.011208209700747037,
-        "win_rate": 0.3194444444444444,
-        "stop_loss_rate": 0.10465116279069768,
-        "max_drawdown_equal_weight": -0.9166964312263418
+        "candidate_count": 88,
+        "settled_count": 73,
+        "avg_net_return": -0.013233277276765616,
+        "median_net_return": -0.01398901098901095,
+        "win_rate": 0.3150684931506849,
+        "stop_loss_rate": 0.10227272727272728,
+        "max_drawdown_equal_weight": -0.96602924120389
       },
       "STRONG": {
         "candidate_count": 19,
@@ -109,13 +109,13 @@
     },
     "liquidity_tier": {
       "": {
-        "candidate_count": 120,
-        "settled_count": 75,
-        "avg_net_return": -0.012061034538067858,
-        "median_net_return": -0.008427408412483125,
-        "win_rate": 0.32,
-        "stop_loss_rate": 0.08333333333333333,
-        "max_drawdown_equal_weight": -0.9612805896421834
+        "candidate_count": 122,
+        "settled_count": 76,
+        "avg_net_return": -0.012683971324636356,
+        "median_net_return": -0.011208209700747037,
+        "win_rate": 0.3157894736842105,
+        "stop_loss_rate": 0.08196721311475409,
+        "max_drawdown_equal_weight": -1.0106133996197317
       }
     },
     "industry_consensus": {
@@ -129,12 +129,12 @@
         "max_drawdown_equal_weight": null
       },
       "False": {
-        "candidate_count": 55,
-        "settled_count": 32,
-        "avg_net_return": -0.011593237723413587,
-        "median_net_return": -0.005008032128514026,
-        "win_rate": 0.3125,
-        "stop_loss_rate": 0.10909090909090909,
+        "candidate_count": 57,
+        "settled_count": 33,
+        "avg_net_return": -0.01304205568080329,
+        "median_net_return": -0.007016064257028051,
+        "win_rate": 0.30303030303030304,
+        "stop_loss_rate": 0.10526315789473684,
         "max_drawdown_equal_weight": -0.4822439933103235
       },
       "True": {
@@ -176,13 +176,13 @@
         "max_drawdown_equal_weight": null
       },
       "WATCH": {
-        "candidate_count": 82,
-        "settled_count": 75,
-        "avg_net_return": -0.012061034538067858,
-        "median_net_return": -0.008427408412483125,
-        "win_rate": 0.32,
-        "stop_loss_rate": 0.12195121951219512,
-        "max_drawdown_equal_weight": -0.9612805896421834
+        "candidate_count": 84,
+        "settled_count": 76,
+        "avg_net_return": -0.012683971324636356,
+        "median_net_return": -0.011208209700747037,
+        "win_rate": 0.3157894736842105,
+        "stop_loss_rate": 0.11904761904761904,
+        "max_drawdown_equal_weight": -1.0106133996197317
       }
     }
   },
