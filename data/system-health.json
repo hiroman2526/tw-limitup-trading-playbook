@@ -3,113 +3,88 @@
     "d1": {
       "schema_version": "p2.20.3",
       "phase": "d1",
-      "date": "2026-10-22",
-      "scheduled_at": "2026-10-22T09:16:00+08:00",
-      "checked_at": "2026-10-22T09:20:04.505054+08:00",
-      "actual_finished_at": "2026-10-22T09:16:25.277036+08:00",
-      "status": "ok_with_notification_failure",
-      "failed_step": null,
-      "reasons": [],
+      "date": "2026-10-23",
+      "scheduled_at": "2026-10-23T09:16:00+08:00",
+      "checked_at": "2026-10-23T09:20:04.229732+08:00",
+      "actual_finished_at": "2026-10-23T09:17:35.985849+08:00",
+      "status": "failed",
+      "failed_step": "retry",
+      "reasons": [
+        "沒有前一日候選資料，無須產生 D1 判斷",
+        "主排程重試後仍失敗"
+      ],
       "steps": {
         "dashboard_data": {
-          "status": "ok",
-          "detail": "D1 09:15 判斷已完成"
-        },
-        "regime_evidence": {
-          "status": "ok",
-          "detail": "09:15 大盤證據與 Dashboard／個股判斷一致"
+          "status": "skipped",
+          "detail": "沒有前一日候選資料，無須產生 D1 判斷"
         },
         "retry": {
-          "status": "ok",
-          "detail": "第一次完成"
+          "status": "failed",
+          "detail": "主排程重試後仍失敗"
         },
         "freshness": {
           "status": "ok",
           "detail": "交易日曆與資料新鮮度已更新"
-        },
-        "pages_git": {
-          "status": "ok",
-          "detail": "GitHub main 已同步"
-        },
-        "public_dashboard": {
-          "status": "ok",
-          "detail": "看盤頁與每日資料均可公開讀取"
-        },
-        "telegram": {
-          "status": "failed",
-          "detail": "Telegram 交易摘要未確認送達"
         }
       },
       "versions": {
         "preflight_data_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781",
-        "preflight_pages_commit": "68cb8522e96ebbb628adfe0eca74f77d05da8d1b",
-        "pages_local_commit": "c395e8d8b419e732d62167573f43dcd7125929ee",
-        "pages_remote_commit": "c395e8d8b419e732d62167573f43dcd7125929ee",
-        "data_runtime_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781"
+        "preflight_pages_commit": "bc5173f7d8f0544e563fef28d025633a94f8f606"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "d1",
-        "date": "2026-10-22",
-        "status": "ok",
-        "retry_delay_seconds": 0,
+        "date": "2026-10-23",
+        "status": "failed",
+        "retry_delay_seconds": 90,
         "attempts": [
           {
             "attempt": 1,
-            "started_at": "2026-10-22T09:16:03.477522+08:00",
-            "finished_at": "2026-10-22T09:16:25.277036+08:00",
-            "exit_code": 0,
-            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   c12b703..c395e8d  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-10-22\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main c395e8d] data: publish D1 09:15 decision\\n 1 file changed, 78 insertions(+), 12 deletions(-)\", \"recorded_at\": \"2026-10-22T09:16:09.356359+08:00\"}\nTelegram notification failed: The read operation timed out\n",
-            "stderr_tail": "Telegram notification failed after D1 data was published\n"
+            "started_at": "2026-10-23T09:16:05.190760+08:00",
+            "finished_at": "2026-10-23T09:16:05.517153+08:00",
+            "exit_code": 1,
+            "stdout_tail": "",
+            "stderr_tail": "Traceback (most recent call last):\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 313, in <module>\n    main()\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 211, in main\n    regime = classify_0915(fetch_taiex_intraday(), args.decision_date)\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/intraday_regime.py\", line 57, in classify_0915\n    raise ValueError(\"TAIEX payload date {} != {}\".format(iso_date, expected_date))\nValueError: TAIEX payload date 2026-10-22 != 2026-10-23\n"
+          },
+          {
+            "attempt": 2,
+            "started_at": "2026-10-23T09:17:35.566523+08:00",
+            "finished_at": "2026-10-23T09:17:35.985849+08:00",
+            "exit_code": 1,
+            "stdout_tail": "",
+            "stderr_tail": "Traceback (most recent call last):\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 313, in <module>\n    main()\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/run_p27_d1_0915_update.py\", line 211, in main\n    regime = classify_0915(fetch_taiex_intraday(), args.decision_date)\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/intraday_regime.py\", line 57, in classify_0915\n    raise ValueError(\"TAIEX payload date {} != {}\".format(iso_date, expected_date))\nValueError: TAIEX payload date 2026-10-22 != 2026-10-23\n"
           }
         ],
-        "recorded_at": "2026-10-22T09:16:25.277099+08:00"
+        "recorded_at": "2026-10-23T09:17:35.985877+08:00"
       },
-      "publication": {
-        "status": "published",
-        "failed_step": null,
-        "reason": "",
-        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   c12b703..c395e8d  main -> main",
-        "schema_version": "p2.20.4",
-        "phase": "d1",
-        "date": "2026-10-22",
-        "local_data_saved": true,
-        "local_commit_created": true,
-        "local_commit_detail": "[main c395e8d] data: publish D1 09:15 decision\n 1 file changed, 78 insertions(+), 12 deletions(-)",
-        "recorded_at": "2026-10-22T09:16:09.356359+08:00"
-      },
+      "publication": {},
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-10-22T09:20:04.545200+08:00",
-        "as_of_date": "2026-10-22",
+        "checked_at": "2026-10-23T09:20:04.271819+08:00",
+        "as_of_date": "2026-10-23",
         "calendar_source": "official_live",
         "market_day": {
-          "date": "2026-10-22",
+          "date": "2026-10-23",
           "status": "trading",
           "source": "weekday",
           "reason": "一般交易日"
         },
-        "previous_trading_date": "2026-10-21",
-        "next_trading_date": "2026-10-23",
-        "latest_data_date": "2026-10-21",
-        "expected_latest_data_date": "2026-10-21",
+        "previous_trading_date": "2026-10-22",
+        "next_trading_date": "2026-10-27",
+        "latest_data_date": "2026-10-22",
+        "expected_latest_data_date": "2026-10-22",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
             "due": true,
-            "ready": true
+            "ready": false
           },
           "afterhours": {
             "due": false,
             "ready": null
           }
         }
-      },
-      "telegram_delivery_status": "failed",
-      "notification_status": "failed",
-      "notification_reasons": [
-        "Telegram 交易摘要未確認送達"
-      ]
+      }
     },
     "afterhours": {
       "schema_version": "p2.20.3",
