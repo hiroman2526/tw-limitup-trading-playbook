@@ -1,27 +1,27 @@
 {
   "schema_version": "p2.21",
-  "checked_at": "2026-10-23T15:45:05.220232+08:00",
-  "as_of_date": "2026-10-23",
+  "checked_at": "2026-10-26T09:20:03.472707+08:00",
+  "as_of_date": "2026-10-26",
   "calendar_source": "official_live",
   "market_day": {
-    "date": "2026-10-23",
-    "status": "trading",
-    "source": "weekday",
-    "reason": "一般交易日"
+    "date": "2026-10-26",
+    "status": "closed",
+    "source": "twse_calendar",
+    "reason": "臺灣光復暨金門古寧頭大捷紀念日"
   },
-  "previous_trading_date": "2026-10-22",
+  "previous_trading_date": "2026-10-23",
   "next_trading_date": "2026-10-27",
   "latest_data_date": "2026-10-22",
   "expected_latest_data_date": "2026-10-23",
-  "is_stale": true,
+  "is_stale": false,
   "expectations": {
     "d1_0915": {
-      "due": true,
-      "ready": false
+      "due": false,
+      "ready": null
     },
     "afterhours": {
-      "due": true,
-      "ready": false
+      "due": false,
+      "ready": null
     }
   }
 }
