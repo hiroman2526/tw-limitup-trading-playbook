@@ -110,19 +110,17 @@
     "afterhours": {
       "schema_version": "p2.20.3",
       "phase": "afterhours",
-      "date": "2026-10-26",
-      "scheduled_at": "2026-10-26T15:30:00+08:00",
-      "checked_at": "2026-10-26T15:45:05.301328+08:00",
-      "actual_finished_at": "2026-10-26T15:31:01.410840+08:00",
-      "status": "skipped",
+      "date": "2026-10-27",
+      "scheduled_at": "2026-10-27T15:30:00+08:00",
+      "checked_at": "2026-10-27T15:45:06.026702+08:00",
+      "actual_finished_at": "2026-10-27T15:31:44.277841+08:00",
+      "status": "ok",
       "failed_step": null,
-      "reasons": [
-        "休市或無盤後市場資料"
-      ],
+      "reasons": [],
       "steps": {
         "dashboard_data": {
-          "status": "skipped",
-          "detail": "休市或無盤後市場資料"
+          "status": "ok",
+          "detail": "盤後資料已完整產生"
         },
         "retry": {
           "status": "ok",
@@ -131,58 +129,86 @@
         "freshness": {
           "status": "ok",
           "detail": "交易日曆與資料新鮮度已更新"
+        },
+        "pages_git": {
+          "status": "ok",
+          "detail": "GitHub main 已同步"
+        },
+        "public_dashboard": {
+          "status": "ok",
+          "detail": "看盤頁與每日資料均可公開讀取"
+        },
+        "telegram": {
+          "status": "ok",
+          "detail": "交易摘要已送達"
         }
       },
       "versions": {
         "preflight_data_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781",
-        "preflight_pages_commit": "89b30683667b56c8fe85e975fa10e8d64dafda53"
+        "preflight_pages_commit": "1e524e5c562c8ed3aedc6b16298925954e030bfa",
+        "pages_local_commit": "06ed60b13da989633f6e121c051d64714210c660",
+        "pages_remote_commit": "06ed60b13da989633f6e121c051d64714210c660",
+        "data_runtime_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "afterhours",
-        "date": "2026-10-26",
+        "date": "2026-10-27",
         "status": "ok",
         "retry_delay_seconds": 0,
         "attempts": [
           {
             "attempt": 1,
-            "started_at": "2026-10-26T15:30:05.468072+08:00",
-            "finished_at": "2026-10-26T15:31:01.410840+08:00",
+            "started_at": "2026-10-27T15:30:06.001775+08:00",
+            "finished_at": "2026-10-27T15:31:44.277841+08:00",
             "exit_code": 0,
-            "stdout_tail": "art_date\\\": \\\"2026-01-01\\\",\\n  \\\"end_date\\\": \\\"2026-10-26\\\",\\n  \\\"requested_weekdays\\\": 371,\\n  \\\"market_dates\\\": 346,\\n  \\\"failed_date_count\\\": 0,\\n  \\\"failed_dates\\\": {},\\n  \\\"empty_response_dates\\\": [\\n    \\\"2025-05-30\\\",\\n    \\\"2025-09-29\\\",\\n    \\\"2025-10-06\\\",\\n    \\\"2025-10-10\\\",\\n    \\\"2025-10-24\\\",\\n    \\\"2025-12-25\\\",\\n    \\\"2026-01-01\\\",\\n    \\\"2026-02-12\\\",\\n    \\\"2026-02-13\\\",\\n    \\\"2026-02-16\\\",\\n    \\\"2026-02-17\\\",\\n    \\\"2026-02-18\\\",\\n    \\\"2026-02-19\\\",\\n    \\\"2026-02-20\\\",\\n    \\\"2026-02-27\\\",\\n    \\\"2026-04-03\\\",\\n    \\\"2026-04-06\\\",\\n    \\\"2026-05-01\\\",\\n    \\\"2026-06-19\\\",\\n    \\\"2026-07-10\\\",\\n    \\\"2026-09-25\\\",\\n    \\\"2026-09-28\\\",\\n    \\\"2026-10-09\\\",\\n    \\\"2026-10-23\\\",\\n    \\\"2026-10-26\\\"\\n  ],\\n  \\\"partial_market_dates\\\": {},\\n  \\\"download_complete\\\": true,\\n  \\\"price_rows\\\": 635253,\\n  \\\"price_stock_count\\\": 2011,\\n  \\\"limitup_event_count\\\": 10118,\\n  \\\"limitup_event_stock_count\\\": 1419,\\n  \\\"verified_limit_event_count\\\": 10118,\\n  \\\"base_candidate_count\\\": 1842,\\n  \\\"selected_for_event_backtest_count\\\": 1453,\\n  \\\"fallback_activated_date_count\\\": 70,\\n  \\\"primary_liquidity_event_count\\\": 3825,\\n  \\\"fallback_liquidity_event_count\\\": 1990,\\n  \\\"survivorship_biased\\\": true,\\n  \\\"limitations\\\": [\\n    \\\"Current master plus TWSE delisted history is incomplete for historical TPEx constituents.\\\",\\n    \\\"Historical disposition and EPS announcement timestamps are not yet as-of verified.\\\",\\n    \\\"TWSE limits are official-reference tick reconstructions; TPEx limits are prior-day published official values.\\\"\\n  ],\\n  \\\"outputs\\\": {\\n    \\\"prices\\\": {\\n      \\\"path\\\": \\\"data/processed/daily_price_full_market_p12_2026.csv\\\",\\n      \\\"sha256\\\": \\\"25d84e678205e469b3e9b06604d0bb3ead33851271bd9b0d917c2d8f21ae7606\\\"\\n    },\\n    \\\"events\\\": {\\n      \\\"path\\\": \\\"data/processed/d0_limitup_events_p12_2026.csv\\\",\\n      \\\"sha256\\\": \\\"e3da9a4253b5e30aa86ea4bbb1a4e56d5cc7a66e72d89165af3d1edcf8ac0271\\\"\\n    }\\n  }\\n}\\n\",\n      \"stderr_tail\": \"\"\n    }\n  ]\n}\n",
+            "stdout_tail": ": 2}, \"finmind_unavailable_observations\": 0, \"historical_backtest_allowed\": false, \"status\": \"insufficient_historical_coverage\", \"reason\": \"需有至少 60 個完整 D1 分鐘線判斷日才可重跑歷史分鐘回測；目前僅保留 forward 封存資料。\", \"source_policy\": \"同一股票日只使用單一來源；Fugle 近期 1 分鐘線優先，FinMind TaiwanStockKBar 僅在帳號授權時使用。\"}\n{\n  \"schema_version\": \"p2.30.0\",\n  \"decision_date\": \"2026-10-27\",\n  \"baseline_rule_version\": \"p2.11_v2\",\n  \"shadow_rule_versions\": [\n    \"p2.30_d1_confirmed_v1\",\n    \"p2.30_d2_reclaim_hv_v1\"\n  ],\n  \"market_minute_verified\": false,\n  \"d1\": {\n    \"candidate_count\": 1,\n    \"confirmed_entry_count\": 0,\n    \"data_incomplete_count\": 0\n  },\n  \"d2\": {\n    \"active_watch_count\": 2,\n    \"confirmed_entry_count\": 0,\n    \"data_incomplete_count\": 2\n  },\n  \"allocated_count\": 0,\n  \"shadow_only\": true,\n  \"telegram_buy_alerts\": false,\n  \"minute_capture_attempts\": [\n    {\n      \"stock_id\": \"6269\",\n      \"attempts\": [\n        {\n          \"provider\": \"Fugle\",\n          \"row_count\": 266,\n          \"status\": \"usable\"\n        }\n      ],\n      \"row_count\": 266\n    },\n    {\n      \"stock_id\": \"6209\",\n      \"attempts\": [\n        {\n          \"provider\": \"Fugle\",\n          \"row_count\": 266,\n          \"status\": \"usable\"\n        }\n      ],\n      \"row_count\": 266\n    }\n  ]\n}\n{\"output\": \"/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook/data/p230-shadow-evaluation.json\", \"d1_records\": 157, \"d2_records\": 6}\n{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   db63ac1..06ed60b  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"afterhours\", \"date\": \"2026-10-27\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main 06ed60b] data: publish 2026-10-27 after-hours dashboard\\n 7 files changed, 295 insertions(+), 47 deletions(-)\\n create mode 100644 data/daily/2026-10-27.json\", \"recorded_at\": \"2026-10-27T15:31:42.882095+08:00\"}\n{\"p3_development_gate\": \"not_ready\", \"p230_shadow_gate\": \"not_ready\"}\n",
             "stderr_tail": ""
           }
         ],
-        "recorded_at": "2026-10-26T15:31:01.410867+08:00"
+        "recorded_at": "2026-10-27T15:31:44.277938+08:00"
       },
-      "publication": {},
+      "publication": {
+        "status": "published",
+        "failed_step": null,
+        "reason": "",
+        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   db63ac1..06ed60b  main -> main",
+        "schema_version": "p2.20.4",
+        "phase": "afterhours",
+        "date": "2026-10-27",
+        "local_data_saved": true,
+        "local_commit_created": true,
+        "local_commit_detail": "[main 06ed60b] data: publish 2026-10-27 after-hours dashboard\n 7 files changed, 295 insertions(+), 47 deletions(-)\n create mode 100644 data/daily/2026-10-27.json",
+        "recorded_at": "2026-10-27T15:31:42.882095+08:00"
+      },
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-10-26T15:45:05.343779+08:00",
-        "as_of_date": "2026-10-26",
+        "checked_at": "2026-10-27T15:45:06.064183+08:00",
+        "as_of_date": "2026-10-27",
         "calendar_source": "official_live",
         "market_day": {
-          "date": "2026-10-26",
-          "status": "closed",
-          "source": "twse_calendar",
-          "reason": "臺灣光復暨金門古寧頭大捷紀念日"
+          "date": "2026-10-27",
+          "status": "trading",
+          "source": "weekday",
+          "reason": "一般交易日"
         },
         "previous_trading_date": "2026-10-23",
-        "next_trading_date": "2026-10-27",
-        "latest_data_date": "2026-10-22",
-        "expected_latest_data_date": "2026-10-23",
+        "next_trading_date": "2026-10-28",
+        "latest_data_date": "2026-10-27",
+        "expected_latest_data_date": "2026-10-27",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
-            "due": false,
-            "ready": null
+            "due": true,
+            "ready": true
           },
           "afterhours": {
-            "due": false,
-            "ready": null
+            "due": true,
+            "ready": true
           }
         }
-      }
+      },
+      "telegram_delivery_status": "sent"
     }
   }
 }
