@@ -177,7 +177,7 @@
     "hold_review_count": 0,
     "settled_count": 0,
     "evidence_pending_count": 0,
-    "market_close_verified": false,
+    "market_close_verified": true,
     "output": "data/processed/p211_paper_trade_log.csv"
   },
   "paper_trading_records": [
@@ -236,7 +236,7 @@
       "p2.30_d1_confirmed_v1",
       "p2.30_d2_reclaim_hv_v1"
     ],
-    "market_minute_verified": false,
+    "market_minute_verified": true,
     "d1": {
       "candidate_count": 2,
       "confirmed_entry_count": 0,
@@ -245,7 +245,7 @@
     "d2": {
       "active_watch_count": 2,
       "confirmed_entry_count": 0,
-      "data_incomplete_count": 2
+      "data_incomplete_count": 0
     },
     "allocated_count": 0,
     "shadow_only": true,
@@ -331,8 +331,10 @@
       "data_timestamp": "2026-10-28T13:30:00+08:00",
       "data_source": "daily outcome + minute archive",
       "shadow_only": true,
-      "paper_status": "data_incomplete",
-      "failure_reason": "missing_reclaim_stop_or_previous_close"
+      "paper_status": "not_eligible",
+      "failure_reason": "invalidation_breached_before_entry",
+      "reclaim_price": 83.0,
+      "stop_price": 79.3
     },
     {
       "rule_version": "p2.30_d2_reclaim_hv_v1",
@@ -349,8 +351,10 @@
       "data_timestamp": "2026-10-28T13:30:00+08:00",
       "data_source": "daily outcome + minute archive",
       "shadow_only": true,
-      "paper_status": "data_incomplete",
-      "failure_reason": "missing_reclaim_stop_or_previous_close"
+      "paper_status": "not_eligible",
+      "failure_reason": "invalidation_breached_before_entry",
+      "reclaim_price": 114.0,
+      "stop_price": 107.0
     }
   ]
 }
