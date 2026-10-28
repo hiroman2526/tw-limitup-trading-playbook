@@ -19,15 +19,24 @@
     "partial_market_dates": {},
     "risk_snapshot_ready": true,
     "regime_0915_ready": true,
-    "regime_0915_date": "2026-10-27",
-    "regime_0915_applies_to": "d1_watch",
+    "regime_0915_date": "2026-10-28",
+    "regime_0915_applies_to": "d0_candidates",
     "market_regime_0915": "STRONG",
-    "taiex_return_0915": 0.00786986850755933,
+    "taiex_return_0915": 0.015357871999510442,
     "eps_snapshot_stock_count": 1981,
     "warning_snapshot_row_count": 14,
-    "limitations": [
-      "2026-10-27 盤後 D0 候選須等待下一交易日 09:15 大盤資料，尚不可標示可交易。"
-    ]
+    "limitations": [],
+    "d0_eligible_count": 0,
+    "d0_regime_0915_date": "2026-10-28",
+    "d1_quote_coverage": {
+      "candidate_count": 2,
+      "covered_count": 2,
+      "coverage_pct": 100.0,
+      "source_counts": {
+        "Fugle 1m fallback after TWSE MIS gap": 2
+      },
+      "missing_stock_ids": []
+    }
   },
   "d0_candidates": [
     {
@@ -46,7 +55,7 @@
       "possible_disposition_next_day": false,
       "currently_disposed_snapshot": false,
       "risk_flags_trade_ready": true,
-      "next_step": "Wait for next trading day 09:15 market regime; D1 open watch; avoid direct chase if D1 open gap >5%",
+      "next_step": "Strong market downranks volume-breakout B setups in V1.",
       "industry_code": "25",
       "industry": "電腦及週邊設備",
       "industry_candidate_count": 1,
@@ -62,7 +71,30 @@
       "disposition_status": "CLEAR",
       "disposition_snapshot_date": "2026-10-27",
       "disposition_sources": [],
-      "market_regime_0915": "PENDING_NEXT_TRADING_DAY"
+      "market_regime_0915": "STRONG",
+      "d1_trade_date": "2026-10-28",
+      "taiex_return_0915": 0.015357871999510442,
+      "d1_open": 33.1,
+      "price_0915": 33.7,
+      "d1_open_gap_pct": -0.006006006006005871,
+      "stock_return_0915": 0.012012012012012185,
+      "stock_minus_taiex_return_pp": -0.33458599874982564,
+      "above_intraday_mean_0915": true,
+      "intraday_mean_available_0915": true,
+      "above_opening_low_0915": true,
+      "d1_decision_status": "DOWNRANK",
+      "d1_decision_reason_code": "STRONG_B_DOWNRANK",
+      "d1_decision_reason": "Strong market downranks volume-breakout B setups in V1.",
+      "d1_decision_ready": true,
+      "d1_quote_source": "Fugle 1m fallback after TWSE MIS gap",
+      "d1_quote_valid_bar_count": 13,
+      "paper_trade_rule_version": "p2.11_v2",
+      "paper_entry_trigger_price": "",
+      "stop_loss_price": 31.5,
+      "ux_trade_blocked": false,
+      "ux_trade_block_reason_code": "",
+      "risk_geometry_valid": true,
+      "risk_distance_pct": null
     },
     {
       "stock_id": "4720",
@@ -80,7 +112,7 @@
       "possible_disposition_next_day": false,
       "currently_disposed_snapshot": false,
       "risk_flags_trade_ready": true,
-      "next_step": "Wait for next trading day 09:15 market regime; D1 open watch; avoid direct chase if D1 open gap >5%",
+      "next_step": "Strong market downranks volume-breakout B setups in V1.",
       "industry_code": "21",
       "industry": "化學工業",
       "industry_candidate_count": 1,
@@ -96,9 +128,43 @@
       "disposition_status": "CLEAR",
       "disposition_snapshot_date": "2026-10-27",
       "disposition_sources": [],
-      "market_regime_0915": "PENDING_NEXT_TRADING_DAY"
+      "market_regime_0915": "STRONG",
+      "d1_trade_date": "2026-10-28",
+      "taiex_return_0915": 0.015357871999510442,
+      "d1_open": 34.6,
+      "price_0915": 33.5,
+      "d1_open_gap_pct": 0.01764705882352935,
+      "stock_return_0915": -0.014705882352941124,
+      "stock_minus_taiex_return_pp": -3.0063754352451566,
+      "above_intraday_mean_0915": false,
+      "intraday_mean_available_0915": true,
+      "above_opening_low_0915": true,
+      "d1_decision_status": "DOWNRANK",
+      "d1_decision_reason_code": "STRONG_B_DOWNRANK",
+      "d1_decision_reason": "Strong market downranks volume-breakout B setups in V1.",
+      "d1_decision_ready": true,
+      "d1_quote_source": "Fugle 1m fallback after TWSE MIS gap",
+      "d1_quote_valid_bar_count": 13,
+      "paper_trade_rule_version": "p2.11_v2",
+      "paper_entry_trigger_price": "",
+      "stop_loss_price": 31.45,
+      "ux_trade_blocked": false,
+      "ux_trade_block_reason_code": "",
+      "risk_geometry_valid": true,
+      "risk_distance_pct": null
     }
   ],
   "d1_watch": [],
-  "d2_watch": []
+  "d2_watch": [],
+  "d0_decision_ready": true,
+  "d0_decision_date": "2026-10-28",
+  "d1_quote_coverage": {
+    "candidate_count": 2,
+    "covered_count": 2,
+    "coverage_pct": 100.0,
+    "source_counts": {
+      "Fugle 1m fallback after TWSE MIS gap": 2
+    },
+    "missing_stock_ids": []
+  }
 }
