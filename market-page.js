@@ -106,7 +106,7 @@ const filteredRows = () => {
 
 const REASON_TEXT = {
   STRONG_B_DOWNRANK: "大盤偏強日不追 B 型（爆量突破）：回測顯示強盤追這樣的期望報酬較差，規則主動不動手。",
-  WEAK_B_DOWNRANK: "大盤偏弱日不追 B 型（爆量突破）：弱盘追高風險高，規則主動不動手。",
+  WEAK_B_DOWNRANK: "大盤偏弱日不追 B 型（爆量突破）：弱盤追高風險高，規則主動不動手。",
 };
 const zeroRecommendationNote = () => {
   if (state.activeStage !== "d1") return "";
