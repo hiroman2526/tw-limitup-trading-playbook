@@ -105,8 +105,8 @@ const filteredRows = () => {
 };
 
 const REASON_TEXT = {
-  STRONG_B_DOWNRANK: "大盘偏強日不追 B 型（爆量突破）：回測顯示強盤追這樣的期望報酬較差，規則主動不動手。",
-  WEAK_B_DOWNRANK: "大盘偏弱日不追 B 型（爆量突破）：弱盘追高風險高，規則主動不動手。",
+  STRONG_B_DOWNRANK: "大盤偏強日不追 B 型（爆量突破）：回測顯示強盤追這樣的期望報酬較差，規則主動不動手。",
+  WEAK_B_DOWNRANK: "大盤偏弱日不追 B 型（爆量突破）：弱盘追高風險高，規則主動不動手。",
 };
 const zeroRecommendationNote = () => {
   if (state.activeStage !== "d1") return "";
@@ -124,7 +124,7 @@ const zeroRecommendationNote = () => {
     groups.get(code).names.push(`${c.name || "未取得名稱"}（${c.stock_id}）`);
   });
   const lines = [...groups.values()].map((g) => `<li><strong>${escapeHtml(g.names.join("、"))}</strong>：${escapeHtml(REASON_TEXT[g.code] || decisionLabel(g.status))}</li>`).join("");
-  return `<section class="reason-card" aria-label="今天零建議的原因"><h3>今天為什麼沒有要買的标的？</h3><p>09:15 大盘狀態：<strong>${escapeHtml(regimeLabel(health.market_regime_0915))}</strong>${ret ? `（大盘 ${escapeHtml(ret)}）` : ""}。今天 ${cands.length} 張候選全部被固定規則降級或拒絕，系統不建議追進。</p><ul>${lines}</ul><p class="reason-note">這不是系統故障，是規則主動選擇不動手；機器仍持續用紙上交易追蹤每一條候選。依據見「策略驗證」頁。</p></section>`;
+  return `<section class="reason-card" aria-label="今天零建議的原因"><h3>今天為什麼沒有要買的標的？</h3><p>09:15 大盤狀態：<strong>${escapeHtml(regimeLabel(health.market_regime_0915))}</strong>${ret ? `（大盤 ${escapeHtml(ret)}）` : ""}。今天 ${cands.length} 張候選全部被固定規則降級或拒絕，系統不建議追進。</p><ul>${lines}</ul><p class="reason-note">這不是系統故障，是規則主動選擇不動手；機器仍持續用紙上交易追蹤每一條候選。依據見「策略驗證」頁。</p></section>`;
 };
 
 const renderRows = () => {
