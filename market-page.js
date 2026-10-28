@@ -5,6 +5,7 @@ import {
   formatLots,
   formatPercent,
   formatPrice,
+  decisionLabel,
   isHistoricalMode,
   regimeLabel,
   riskStatusLabel,
@@ -25,7 +26,7 @@ const elements = {
 
 const state = {
   dates: [], latestDate: "", selectedDate: "", activeStage: "d1", lanes: null, documentCache: new Map(),
-  freshness: null, health: null, currentRows: [], historyLoaded: false,
+  freshness: null, health: null, currentRows: [], historyLoaded: false, currentDocument: null,
 };
 const isAfterHours = () => {
   const now = new Date();
@@ -103,6 +104,29 @@ const filteredRows = () => {
   return rows;
 };
 
+const REASON_TEXT = {
+  STRONG_B_DOWNRANK: "大盘偏強日不追 B 型（爆量突破）：回測顯示強盤追這樣的期望報酬較差，規則主動不動手。",
+  WEAK_B_DOWNRANK: "大盘偏弱日不追 B 型（爆量突破）：弱盘追高風險高，規則主動不動手。",
+};
+const zeroRecommendationNote = () => {
+  if (state.activeStage !== "d1") return "";
+  const doc = state.currentDocument;
+  const lane = state.lanes?.d1;
+  if (!doc || !lane || !lane.decisionReady) return "";
+  const cands = doc.d0_candidates || [];
+  if (!cands.length || cands.some((c) => ["WATCH", "PULLBACK_ONLY"].includes(c.d1_decision_status))) return "";
+  const health = doc.health || {};
+  const ret = typeof health.taiex_return_0915 === "number" ? `${health.taiex_return_0915 >= 0 ? "+" : ""}${(health.taiex_return_0915 * 100).toFixed(2)}%` : "";
+  const groups = new Map();
+  cands.forEach((c) => {
+    const code = c.d1_decision_reason_code || c.d1_decision_status || "UNKNOWN";
+    if (!groups.has(code)) groups.set(code, { code, status: c.d1_decision_status, names: [] });
+    groups.get(code).names.push(`${c.name || "未取得名稱"}（${c.stock_id}）`);
+  });
+  const lines = [...groups.values()].map((g) => `<li><strong>${escapeHtml(g.names.join("、"))}</strong>：${escapeHtml(REASON_TEXT[g.code] || decisionLabel(g.status))}</li>`).join("");
+  return `<section class="reason-card" aria-label="今天零建議的原因"><h3>今天為什麼沒有要買的标的？</h3><p>09:15 大盘狀態：<strong>${escapeHtml(regimeLabel(health.market_regime_0915))}</strong>${ret ? `（大盘 ${escapeHtml(ret)}）` : ""}。今天 ${cands.length} 張候選全部被固定規則降級或拒絕，系統不建議追進。</p><ul>${lines}</ul><p class="reason-note">這不是系統故障，是規則主動選擇不動手；機器仍持續用紙上交易追蹤每一條候選。依據見「策略驗證」頁。</p></section>`;
+};
+
 const renderRows = () => {
   const lane = state.lanes[state.activeStage];
   const rows = filteredRows();
@@ -116,6 +140,8 @@ const renderRows = () => {
   } else if (!rows.length) {
     elements.list.innerHTML = `<div class="empty-state"><h3>篩選後沒有股票</h3><p>原始名單有 ${lane.rows.length} 檔；請清除篩選後再查看。</p></div>`;
   } else elements.list.innerHTML = rows.map(candidateCard).join("");
+  const zeroNote = zeroRecommendationNote();
+  if (zeroNote) elements.list.insertAdjacentHTML("afterbegin", zeroNote);
   elements.clear.hidden = [elements.setup, elements.liquidity, elements.risk].every((item) => item.value === "all") && elements.sort.value === "priority";
 };
 
@@ -181,6 +207,7 @@ const renderDate = async (date) => {
     const nextIndexedDate = index >= 0 && index < state.dates.length - 1 ? state.dates[index + 1] : "";
     const [selected, previous] = await Promise.all([loadDocument(date), loadDocument(previousDate)]);
     state.selectedDate = date;
+    state.currentDocument = selected;
     const nextTradingDate = nextIndexedDate || state.freshness?.next_trading_date || "";
     state.lanes = buildDecisionLanes({ selected, previous, selectedDate: date, nextTradingDate });
     elements.tabs.forEach((tab) => { const lane = state.lanes[tab.dataset.stage]; tab.disabled = false; tab.firstChild.nodeValue = `${lane.tabLabel} `; tab.querySelector("span").textContent = lane.rows.length; });
