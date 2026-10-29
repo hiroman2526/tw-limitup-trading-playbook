@@ -74,13 +74,11 @@
       "phase": "afterhours",
       "date": "2026-10-29",
       "scheduled_at": "2026-10-29T15:30:00+08:00",
-      "checked_at": "2026-10-29T22:50:24.294492+08:00",
+      "checked_at": "2026-10-29T22:50:55.015039+08:00",
       "actual_finished_at": "2026-10-29T22:50:09.349229+08:00",
-      "status": "failed",
-      "failed_step": "public_dashboard",
-      "reasons": [
-        "公開頁檢查失敗：HTTP 200；HTTP Error 404: Not Found"
-      ],
+      "status": "ok",
+      "failed_step": null,
+      "reasons": [],
       "steps": {
         "dashboard_data": {
           "status": "ok",
@@ -99,15 +97,19 @@
           "detail": "GitHub main 已同步"
         },
         "public_dashboard": {
-          "status": "failed",
-          "detail": "公開頁檢查失敗：HTTP 200；HTTP Error 404: Not Found"
+          "status": "ok",
+          "detail": "看盤頁與每日資料均可公開讀取"
+        },
+        "telegram": {
+          "status": "ok",
+          "detail": "交易摘要已送達"
         }
       },
       "versions": {
         "preflight_data_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
         "preflight_pages_commit": "7d052fb3f6f38857a3f70264e512fc1c1c4fac71",
-        "pages_local_commit": "b9b6d4e976ec9a49371a03f1cf24bdb44c57dfa9",
-        "pages_remote_commit": "b9b6d4e976ec9a49371a03f1cf24bdb44c57dfa9",
+        "pages_local_commit": "6692030fd4641b738df9b1e3eb37d538db013958",
+        "pages_remote_commit": "6692030fd4641b738df9b1e3eb37d538db013958",
         "data_runtime_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80"
       },
       "retry": {
@@ -143,7 +145,7 @@
       },
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-10-29T22:50:24.334200+08:00",
+        "checked_at": "2026-10-29T22:50:55.048417+08:00",
         "as_of_date": "2026-10-29",
         "calendar_source": "official_live",
         "market_day": {
