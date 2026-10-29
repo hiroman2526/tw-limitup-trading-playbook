@@ -1,23 +1,26 @@
 {
   "schema_version": "p2.20.1",
-  "checked_at": "2026-10-28T15:20:05.407058+08:00",
-  "phase": "afterhours",
-  "status": "ok",
-  "errors": [],
+  "checked_at": "2026-10-29T09:10:07.688214+08:00",
+  "phase": "d1",
+  "status": "failed",
+  "errors": [
+    "tw-market-data 執行環境仍有未提交變更：scripts/run_p220_retry.py.bak-d1fix-20261028, scripts/run_p27_d1_0915_update.py.bak-d1fix-20261028, src/tw_market_data/intraday_regime.py.bak-d1fix-20261028",
+    "tw-limitup-trading-playbook 執行環境仍有未提交變更：market-page.js.bak-zerocard-20261028, market.html.bak-zerocard-20261028, ux.css.bak-zerocard-20261028"
+  ],
   "versions": {
     "data": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-market-data",
       "exists": true,
-      "before_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781",
-      "dirty_before_sync": false,
+      "before_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
+      "dirty_before_sync": true,
       "ignored_generated_changes_before_sync": [
         "data/reference/twse_holiday_calendar_2026.json"
       ],
       "sync_exit_code": 0,
       "sync_message": "Already up to date.",
-      "commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781",
-      "origin_main": "9896d1db7f5ce017b3deeb87e76e870108a7f781",
-      "dirty_after_sync": false,
+      "commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
+      "origin_main": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
+      "dirty_after_sync": true,
       "ignored_generated_changes_after_sync": [
         "data/reference/twse_holiday_calendar_2026.json"
       ]
@@ -25,14 +28,14 @@
     "pages": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook",
       "exists": true,
-      "before_commit": "77bb20fb9da9aab2c5d2f5888644c2b3f1dca6ec",
-      "dirty_before_sync": false,
+      "before_commit": "71e6b7b4d274e0fd94cb28b097630a3db5a3b040",
+      "dirty_before_sync": true,
       "ignored_generated_changes_before_sync": [],
       "sync_exit_code": 0,
       "sync_message": "Already up to date.",
-      "commit": "77bb20fb9da9aab2c5d2f5888644c2b3f1dca6ec",
-      "origin_main": "77bb20fb9da9aab2c5d2f5888644c2b3f1dca6ec",
-      "dirty_after_sync": false,
+      "commit": "71e6b7b4d274e0fd94cb28b097630a3db5a3b040",
+      "origin_main": "71e6b7b4d274e0fd94cb28b097630a3db5a3b040",
+      "dirty_after_sync": true,
       "ignored_generated_changes_after_sync": []
     }
   }
