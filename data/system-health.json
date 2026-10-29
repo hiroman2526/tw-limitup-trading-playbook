@@ -3,109 +3,71 @@
     "d1": {
       "schema_version": "p2.20.3",
       "phase": "d1",
-      "date": "2026-10-28",
-      "scheduled_at": "2026-10-28T09:16:00+08:00",
-      "checked_at": "2026-10-28T09:20:03.426018+08:00",
-      "actual_finished_at": "2026-10-28T09:16:12.402531+08:00",
-      "status": "ok",
-      "failed_step": null,
-      "reasons": [],
+      "date": "2026-10-29",
+      "scheduled_at": "2026-10-29T09:16:00+08:00",
+      "checked_at": "2026-10-29T09:20:06.050522+08:00",
+      "actual_finished_at": "2026-10-29T09:16:05.981943+08:00",
+      "status": "failed",
+      "failed_step": "retry",
+      "reasons": [
+        "沒有前一日候選資料，無須產生 D1 判斷",
+        "主排程重試後仍失敗"
+      ],
       "steps": {
         "dashboard_data": {
-          "status": "ok",
-          "detail": "D1 09:15 判斷已完成"
-        },
-        "regime_evidence": {
-          "status": "ok",
-          "detail": "09:15 大盤證據與 Dashboard／個股判斷一致"
+          "status": "skipped",
+          "detail": "沒有前一日候選資料，無須產生 D1 判斷"
         },
         "retry": {
-          "status": "ok",
-          "detail": "第一次完成"
+          "status": "failed",
+          "detail": "主排程重試後仍失敗"
         },
         "freshness": {
           "status": "ok",
           "detail": "交易日曆與資料新鮮度已更新"
-        },
-        "pages_git": {
-          "status": "ok",
-          "detail": "GitHub main 已同步"
-        },
-        "public_dashboard": {
-          "status": "ok",
-          "detail": "看盤頁與每日資料均可公開讀取"
-        },
-        "telegram": {
-          "status": "ok",
-          "detail": "交易摘要已送達"
         }
       },
       "versions": {
-        "preflight_data_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781",
-        "preflight_pages_commit": "90ba6591d04b1646d98c4f4ad6e88925cd630cde",
-        "pages_local_commit": "1f7458b17a03b7c8f178c86f01c9c6930148a2ea",
-        "pages_remote_commit": "1f7458b17a03b7c8f178c86f01c9c6930148a2ea",
-        "data_runtime_commit": "9896d1db7f5ce017b3deeb87e76e870108a7f781"
+        "preflight_data_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
+        "preflight_pages_commit": "71e6b7b4d274e0fd94cb28b097630a3db5a3b040"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "d1",
-        "date": "2026-10-28",
-        "status": "ok",
-        "retry_delay_seconds": 0,
-        "attempts": [
-          {
-            "attempt": 1,
-            "started_at": "2026-10-28T09:16:04.370942+08:00",
-            "finished_at": "2026-10-28T09:16:12.402531+08:00",
-            "exit_code": 0,
-            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   a4a0f27..1f7458b  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-10-28\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main 1f7458b] data: publish D1 09:15 decision\\n 1 file changed, 77 insertions(+), 11 deletions(-)\", \"recorded_at\": \"2026-10-28T09:16:10.482094+08:00\"}\n",
-            "stderr_tail": ""
-          }
-        ],
-        "recorded_at": "2026-10-28T09:16:12.402590+08:00"
+        "date": "2026-10-29",
+        "status": "blocked_preflight",
+        "reason": "預檢未通過：tw-market-data 執行環境仍有未提交變更：scripts/run_p220_retry.py.bak-d1fix-20261028, scripts/run_p27_d1_0915_update.py.bak-d1fix-20261028, src/tw_market_data/intraday_regime.py.bak-d1fix-20261028；tw-limitup-trading-playbook 執行環境仍有未提交變更：market-page.js.bak-zerocard-20261028, market.html.bak-zerocard-20261028, ux.css.bak-zerocard-20261028",
+        "attempts": [],
+        "recorded_at": "2026-10-29T09:16:05.981943+08:00"
       },
-      "publication": {
-        "status": "published",
-        "failed_step": null,
-        "reason": "",
-        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   a4a0f27..1f7458b  main -> main",
-        "schema_version": "p2.20.4",
-        "phase": "d1",
-        "date": "2026-10-28",
-        "local_data_saved": true,
-        "local_commit_created": true,
-        "local_commit_detail": "[main 1f7458b] data: publish D1 09:15 decision\n 1 file changed, 77 insertions(+), 11 deletions(-)",
-        "recorded_at": "2026-10-28T09:16:10.482094+08:00"
-      },
+      "publication": {},
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-10-28T09:20:03.467703+08:00",
-        "as_of_date": "2026-10-28",
+        "checked_at": "2026-10-29T09:20:06.090567+08:00",
+        "as_of_date": "2026-10-29",
         "calendar_source": "official_live",
         "market_day": {
-          "date": "2026-10-28",
+          "date": "2026-10-29",
           "status": "trading",
           "source": "weekday",
           "reason": "一般交易日"
         },
-        "previous_trading_date": "2026-10-27",
-        "next_trading_date": "2026-10-29",
-        "latest_data_date": "2026-10-27",
-        "expected_latest_data_date": "2026-10-27",
+        "previous_trading_date": "2026-10-28",
+        "next_trading_date": "2026-10-30",
+        "latest_data_date": "2026-10-28",
+        "expected_latest_data_date": "2026-10-28",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
             "due": true,
-            "ready": true
+            "ready": false
           },
           "afterhours": {
             "due": false,
             "ready": null
           }
         }
-      },
-      "telegram_delivery_status": "sent"
+      }
     },
     "afterhours": {
       "schema_version": "p2.20.3",
