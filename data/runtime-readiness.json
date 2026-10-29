@@ -1,7 +1,7 @@
 {
   "schema_version": "p2.20.1",
-  "checked_at": "2026-10-29T09:10:07.688214+08:00",
-  "phase": "d1",
+  "checked_at": "2026-10-29T15:20:07.913826+08:00",
+  "phase": "afterhours",
   "status": "failed",
   "errors": [
     "tw-market-data 執行環境仍有未提交變更：scripts/run_p220_retry.py.bak-d1fix-20261028, scripts/run_p27_d1_0915_update.py.bak-d1fix-20261028, src/tw_market_data/intraday_regime.py.bak-d1fix-20261028",
@@ -28,13 +28,13 @@
     "pages": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook",
       "exists": true,
-      "before_commit": "71e6b7b4d274e0fd94cb28b097630a3db5a3b040",
+      "before_commit": "acee6199ad5290ea16c8d352df01c046d2a57454",
       "dirty_before_sync": true,
       "ignored_generated_changes_before_sync": [],
       "sync_exit_code": 0,
       "sync_message": "Already up to date.",
-      "commit": "71e6b7b4d274e0fd94cb28b097630a3db5a3b040",
-      "origin_main": "71e6b7b4d274e0fd94cb28b097630a3db5a3b040",
+      "commit": "acee6199ad5290ea16c8d352df01c046d2a57454",
+      "origin_main": "acee6199ad5290ea16c8d352df01c046d2a57454",
       "dirty_after_sync": true,
       "ignored_generated_changes_after_sync": []
     }
