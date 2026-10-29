@@ -1,18 +1,15 @@
 {
   "schema_version": "p2.20.1",
-  "checked_at": "2026-10-29T15:20:07.913826+08:00",
+  "checked_at": "2026-10-29T22:48:05.644189+08:00",
   "phase": "afterhours",
-  "status": "failed",
-  "errors": [
-    "tw-market-data 執行環境仍有未提交變更：scripts/run_p220_retry.py.bak-d1fix-20261028, scripts/run_p27_d1_0915_update.py.bak-d1fix-20261028, src/tw_market_data/intraday_regime.py.bak-d1fix-20261028",
-    "tw-limitup-trading-playbook 執行環境仍有未提交變更：market-page.js.bak-zerocard-20261028, market.html.bak-zerocard-20261028, ux.css.bak-zerocard-20261028"
-  ],
+  "status": "ok",
+  "errors": [],
   "versions": {
     "data": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-market-data",
       "exists": true,
       "before_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
-      "dirty_before_sync": true,
+      "dirty_before_sync": false,
       "ignored_generated_changes_before_sync": [
         "data/reference/twse_holiday_calendar_2026.json"
       ],
@@ -20,7 +17,7 @@
       "sync_message": "Already up to date.",
       "commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
       "origin_main": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
-      "dirty_after_sync": true,
+      "dirty_after_sync": false,
       "ignored_generated_changes_after_sync": [
         "data/reference/twse_holiday_calendar_2026.json"
       ]
@@ -28,14 +25,14 @@
     "pages": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook",
       "exists": true,
-      "before_commit": "acee6199ad5290ea16c8d352df01c046d2a57454",
-      "dirty_before_sync": true,
+      "before_commit": "7d052fb3f6f38857a3f70264e512fc1c1c4fac71",
+      "dirty_before_sync": false,
       "ignored_generated_changes_before_sync": [],
       "sync_exit_code": 0,
       "sync_message": "Already up to date.",
-      "commit": "acee6199ad5290ea16c8d352df01c046d2a57454",
-      "origin_main": "acee6199ad5290ea16c8d352df01c046d2a57454",
-      "dirty_after_sync": true,
+      "commit": "7d052fb3f6f38857a3f70264e512fc1c1c4fac71",
+      "origin_main": "7d052fb3f6f38857a3f70264e512fc1c1c4fac71",
+      "dirty_after_sync": false,
       "ignored_generated_changes_after_sync": []
     }
   }
