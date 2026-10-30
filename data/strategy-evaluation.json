@@ -1,16 +1,16 @@
 {
   "schema_version": "p2.24",
   "rule_version": "p2.11_v2",
-  "decision_day_count": 35,
+  "decision_day_count": 36,
   "minimum_decision_days": 20,
   "status": "ready_for_review",
   "overall": {
-    "candidate_count": 132,
+    "candidate_count": 134,
     "settled_count": 79,
     "avg_net_return": -0.013581720975449359,
     "median_net_return": -0.01398901098901095,
     "win_rate": 0.3037974683544304,
-    "stop_loss_rate": 0.08333333333333333,
+    "stop_loss_rate": 0.08208955223880597,
     "max_drawdown_equal_weight": -1.119587536007868
   },
   "unsettled_count": 7,
@@ -60,12 +60,12 @@
   "splits": {
     "setup_type": {
       "B": {
-        "candidate_count": 132,
+        "candidate_count": 134,
         "settled_count": 79,
         "avg_net_return": -0.013581720975449359,
         "median_net_return": -0.01398901098901095,
         "win_rate": 0.3037974683544304,
-        "stop_loss_rate": 0.08333333333333333,
+        "stop_loss_rate": 0.08208955223880597,
         "max_drawdown_equal_weight": -1.119587536007868
       }
     },
@@ -98,23 +98,23 @@
         "max_drawdown_equal_weight": null
       },
       "WEAK": {
-        "candidate_count": 15,
+        "candidate_count": 17,
         "settled_count": 4,
         "avg_net_return": -0.013333382962356394,
         "median_net_return": -0.023792079207920813,
         "win_rate": 0.25,
-        "stop_loss_rate": 0.06666666666666667,
+        "stop_loss_rate": 0.058823529411764705,
         "max_drawdown_equal_weight": -0.09996511079679393
       }
     },
     "liquidity_tier": {
       "": {
-        "candidate_count": 132,
+        "candidate_count": 134,
         "settled_count": 79,
         "avg_net_return": -0.013581720975449359,
         "median_net_return": -0.01398901098901095,
         "win_rate": 0.3037974683544304,
-        "stop_loss_rate": 0.08333333333333333,
+        "stop_loss_rate": 0.08208955223880597,
         "max_drawdown_equal_weight": -1.119587536007868
       }
     },
@@ -129,12 +129,12 @@
         "max_drawdown_equal_weight": null
       },
       "False": {
-        "candidate_count": 63,
+        "candidate_count": 65,
         "settled_count": 34,
         "avg_net_return": -0.013902621985593434,
         "median_net_return": -0.012502678809456266,
         "win_rate": 0.29411764705882354,
-        "stop_loss_rate": 0.09523809523809523,
+        "stop_loss_rate": 0.09230769230769231,
         "max_drawdown_equal_weight": -0.5193207264575451
       },
       "True": {
@@ -167,7 +167,7 @@
         "max_drawdown_equal_weight": null
       },
       "REJECT": {
-        "candidate_count": 25,
+        "candidate_count": 27,
         "settled_count": 0,
         "avg_net_return": null,
         "median_net_return": null,
