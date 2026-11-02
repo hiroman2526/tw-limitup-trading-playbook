@@ -42,10 +42,10 @@
     "p2.30_d1_confirmed_v1": {
       "label": "D1確認突破（影子）",
       "normal": {
-        "candidate_count": 161,
+        "candidate_count": 162,
         "confirmed_entry_count": 0,
         "settled_count": 0,
-        "no_entry_count": 83,
+        "no_entry_count": 84,
         "data_incomplete_count": 78,
         "average_net_return": null,
         "median_net_return": null,
@@ -56,10 +56,10 @@
         "largest_winner_profit_contribution": null
       },
       "stress": {
-        "candidate_count": 161,
+        "candidate_count": 162,
         "confirmed_entry_count": 0,
         "settled_count": 0,
-        "no_entry_count": 83,
+        "no_entry_count": 84,
         "data_incomplete_count": 78,
         "average_net_return": null,
         "median_net_return": null,
@@ -71,7 +71,7 @@
       },
       "gate": {
         "status": "collecting",
-        "decision_day_count": 28,
+        "decision_day_count": 29,
         "checks": {
           "at_least_60_decision_days": false,
           "at_least_30_settled_entries": false,
@@ -90,10 +90,10 @@
     "p2.30_d2_reclaim_hv_v1": {
       "label": "D2+高量重返（影子）",
       "normal": {
-        "candidate_count": 12,
+        "candidate_count": 13,
         "confirmed_entry_count": 0,
         "settled_count": 0,
-        "no_entry_count": 6,
+        "no_entry_count": 7,
         "data_incomplete_count": 6,
         "average_net_return": null,
         "median_net_return": null,
@@ -104,10 +104,10 @@
         "largest_winner_profit_contribution": null
       },
       "stress": {
-        "candidate_count": 12,
+        "candidate_count": 13,
         "confirmed_entry_count": 0,
         "settled_count": 0,
-        "no_entry_count": 6,
+        "no_entry_count": 7,
         "data_incomplete_count": 6,
         "average_net_return": null,
         "median_net_return": null,
@@ -584,10 +584,10 @@
           "largest_winner_profit_contribution": null
         },
         "未分類": {
-          "candidate_count": 47,
+          "candidate_count": 48,
           "confirmed_entry_count": 0,
           "settled_count": 0,
-          "no_entry_count": 47,
+          "no_entry_count": 48,
           "data_incomplete_count": 0,
           "average_net_return": null,
           "median_net_return": null,
@@ -600,10 +600,10 @@
       },
       "sector_confirmation": {
         "False": {
-          "candidate_count": 116,
+          "candidate_count": 117,
           "confirmed_entry_count": 0,
           "settled_count": 0,
-          "no_entry_count": 63,
+          "no_entry_count": 64,
           "data_incomplete_count": 53,
           "average_net_return": null,
           "median_net_return": null,
@@ -644,10 +644,10 @@
           "largest_winner_profit_contribution": null
         },
         "資料不足": {
-          "candidate_count": 157,
+          "candidate_count": 158,
           "confirmed_entry_count": 0,
           "settled_count": 0,
-          "no_entry_count": 79,
+          "no_entry_count": 80,
           "data_incomplete_count": 78,
           "average_net_return": null,
           "median_net_return": null,
@@ -662,10 +662,10 @@
     "p2.30_d2_reclaim_hv_v1": {
       "sector_confirmation": {
         "False": {
-          "candidate_count": 7,
+          "candidate_count": 8,
           "confirmed_entry_count": 0,
           "settled_count": 0,
-          "no_entry_count": 5,
+          "no_entry_count": 6,
           "data_incomplete_count": 2,
           "average_net_return": null,
           "median_net_return": null,
@@ -692,10 +692,10 @@
       },
       "risk_distance": {
         "資料不足": {
-          "candidate_count": 12,
+          "candidate_count": 13,
           "confirmed_entry_count": 0,
           "settled_count": 0,
-          "no_entry_count": 6,
+          "no_entry_count": 7,
           "data_incomplete_count": 6,
           "average_net_return": null,
           "median_net_return": null,
