@@ -3,11 +3,11 @@
     "d1": {
       "schema_version": "p2.20.3",
       "phase": "d1",
-      "date": "2026-11-02",
-      "scheduled_at": "2026-11-02T09:16:00+08:00",
-      "checked_at": "2026-11-02T09:20:03.677224+08:00",
-      "actual_finished_at": "2026-11-02T09:16:22.143844+08:00",
-      "status": "ok_with_notification_failure",
+      "date": "2026-11-03",
+      "scheduled_at": "2026-11-03T09:16:00+08:00",
+      "checked_at": "2026-11-03T09:20:03.117704+08:00",
+      "actual_finished_at": "2026-11-03T09:16:25.737837+08:00",
+      "status": "ok",
       "failed_step": null,
       "reasons": [],
       "steps": {
@@ -36,63 +36,63 @@
           "detail": "看盤頁與每日資料均可公開讀取"
         },
         "telegram": {
-          "status": "failed",
-          "detail": "Telegram 交易摘要未確認送達"
+          "status": "ok",
+          "detail": "交易摘要已送達"
         }
       },
       "versions": {
         "preflight_data_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
-        "preflight_pages_commit": "428834295cd80781f2c461f55eee16787340d7b0",
-        "pages_local_commit": "bb93c1ab5d79d77d19e9291c8e9c528018f329e6",
-        "pages_remote_commit": "bb93c1ab5d79d77d19e9291c8e9c528018f329e6",
+        "preflight_pages_commit": "23ffcf8400ff631d2e6b25cb94dcc19cc94ceb62",
+        "pages_local_commit": "bd93b59b57b39da1efc4be4af923d41ab15901d8",
+        "pages_remote_commit": "bd93b59b57b39da1efc4be4af923d41ab15901d8",
         "data_runtime_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "d1",
-        "date": "2026-11-02",
+        "date": "2026-11-03",
         "status": "ok",
         "retry_delay_seconds": 0,
         "attempts": [
           {
             "attempt": 1,
-            "started_at": "2026-11-02T09:16:00.638541+08:00",
-            "finished_at": "2026-11-02T09:16:22.143844+08:00",
+            "started_at": "2026-11-03T09:16:03.925870+08:00",
+            "finished_at": "2026-11-03T09:16:25.737837+08:00",
             "exit_code": 0,
-            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   a5fa403..bb93c1a  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-11-02\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main bb93c1a] data: publish D1 09:15 decision\\n 1 file changed, 24 insertions(+), 8 deletions(-)\", \"recorded_at\": \"2026-11-02T09:16:06.153914+08:00\"}\nTelegram notification failed: The read operation timed out\n",
-            "stderr_tail": "Telegram notification failed after D1 data was published\n"
+            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   7f35192..bd93b59  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-11-03\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main bd93b59] data: publish D1 09:15 decision\\n 1 file changed, 105 insertions(+), 14 deletions(-)\", \"recorded_at\": \"2026-11-03T09:16:09.987574+08:00\"}\n",
+            "stderr_tail": ""
           }
         ],
-        "recorded_at": "2026-11-02T09:16:22.143943+08:00"
+        "recorded_at": "2026-11-03T09:16:25.737919+08:00"
       },
       "publication": {
         "status": "published",
         "failed_step": null,
         "reason": "",
-        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   a5fa403..bb93c1a  main -> main",
+        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   7f35192..bd93b59  main -> main",
         "schema_version": "p2.20.4",
         "phase": "d1",
-        "date": "2026-11-02",
+        "date": "2026-11-03",
         "local_data_saved": true,
         "local_commit_created": true,
-        "local_commit_detail": "[main bb93c1a] data: publish D1 09:15 decision\n 1 file changed, 24 insertions(+), 8 deletions(-)",
-        "recorded_at": "2026-11-02T09:16:06.153914+08:00"
+        "local_commit_detail": "[main bd93b59] data: publish D1 09:15 decision\n 1 file changed, 105 insertions(+), 14 deletions(-)",
+        "recorded_at": "2026-11-03T09:16:09.987574+08:00"
       },
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-11-02T09:20:03.716447+08:00",
-        "as_of_date": "2026-11-02",
+        "checked_at": "2026-11-03T09:20:03.156721+08:00",
+        "as_of_date": "2026-11-03",
         "calendar_source": "official_live",
         "market_day": {
-          "date": "2026-11-02",
+          "date": "2026-11-03",
           "status": "trading",
           "source": "weekday",
           "reason": "一般交易日"
         },
-        "previous_trading_date": "2026-10-30",
-        "next_trading_date": "2026-11-03",
-        "latest_data_date": "2026-10-30",
-        "expected_latest_data_date": "2026-10-30",
+        "previous_trading_date": "2026-11-02",
+        "next_trading_date": "2026-11-04",
+        "latest_data_date": "2026-11-02",
+        "expected_latest_data_date": "2026-11-02",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
@@ -105,11 +105,7 @@
           }
         }
       },
-      "telegram_delivery_status": "failed",
-      "notification_status": "failed",
-      "notification_reasons": [
-        "Telegram 交易摘要未確認送達"
-      ]
+      "telegram_delivery_status": "sent"
     },
     "afterhours": {
       "schema_version": "p2.20.3",
