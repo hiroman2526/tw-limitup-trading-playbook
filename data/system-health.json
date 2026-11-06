@@ -3,50 +3,92 @@
     "d1": {
       "schema_version": "p2.20.3",
       "phase": "d1",
-      "date": "2026-11-05",
-      "scheduled_at": "2026-11-05T09:16:00+08:00",
-      "checked_at": "2026-11-05T09:20:04.923215+08:00",
-      "actual_finished_at": null,
-      "status": "skipped",
-      "failed_step": null,
+      "date": "2026-11-06",
+      "scheduled_at": "2026-11-06T09:16:00+08:00",
+      "checked_at": "2026-11-06T09:20:05.921805+08:00",
+      "actual_finished_at": "2026-11-06T09:16:27.583522+08:00",
+      "status": "failed",
+      "failed_step": "health_check",
       "reasons": [
-        "沒有前一日候選資料，無須產生 D1 判斷"
+        "Command '['git', '-C', '/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook', 'ls-remote', 'origin', 'refs/heads/main']' returned non-zero exit status 128."
       ],
       "steps": {
         "dashboard_data": {
-          "status": "skipped",
-          "detail": "沒有前一日候選資料，無須產生 D1 判斷"
+          "status": "ok",
+          "detail": "D1 09:15 判斷已完成"
+        },
+        "regime_evidence": {
+          "status": "ok",
+          "detail": "09:15 大盤證據與 Dashboard／個股判斷一致"
+        },
+        "retry": {
+          "status": "ok",
+          "detail": "第一次完成"
         },
         "freshness": {
           "status": "ok",
           "detail": "交易日曆與資料新鮮度已更新"
+        },
+        "health_check": {
+          "status": "failed",
+          "detail": "Command '['git', '-C', '/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook', 'ls-remote', 'origin', 'refs/heads/main']' returned non-zero exit status 128."
         }
       },
       "versions": {
         "preflight_data_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
-        "preflight_pages_commit": "e9839b94e31cf707e882a1ce7cdd2bf72e627d24"
+        "preflight_pages_commit": "5e2c0584a1b7c1d06513d25205dd11ce4279396d"
       },
-      "publication": {},
+      "retry": {
+        "schema_version": "p2.20.2",
+        "phase": "d1",
+        "date": "2026-11-06",
+        "status": "ok",
+        "retry_delay_seconds": 0,
+        "attempts": [
+          {
+            "attempt": 1,
+            "started_at": "2026-11-06T09:16:05.925231+08:00",
+            "finished_at": "2026-11-06T09:16:27.583522+08:00",
+            "exit_code": 0,
+            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   5e2c058..230020a  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-11-06\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main 230020a] data: publish D1 09:15 decision\\n 1 file changed, 24 insertions(+), 8 deletions(-)\", \"recorded_at\": \"2026-11-06T09:16:11.499200+08:00\"}\nTelegram notification failed: The read operation timed out\n",
+            "stderr_tail": "Telegram notification failed after D1 data was published\n"
+          }
+        ],
+        "recorded_at": "2026-11-06T09:16:27.583590+08:00"
+      },
+      "publication": {
+        "status": "published",
+        "failed_step": null,
+        "reason": "",
+        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   5e2c058..230020a  main -> main",
+        "schema_version": "p2.20.4",
+        "phase": "d1",
+        "date": "2026-11-06",
+        "local_data_saved": true,
+        "local_commit_created": true,
+        "local_commit_detail": "[main 230020a] data: publish D1 09:15 decision\n 1 file changed, 24 insertions(+), 8 deletions(-)",
+        "recorded_at": "2026-11-06T09:16:11.499200+08:00"
+      },
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-11-05T09:20:04.963670+08:00",
-        "as_of_date": "2026-11-05",
+        "checked_at": "2026-11-06T09:20:05.960390+08:00",
+        "as_of_date": "2026-11-06",
         "calendar_source": "official_cache",
         "market_day": {
-          "date": "2026-11-05",
+          "date": "2026-11-06",
           "status": "trading",
           "source": "weekday",
           "reason": "一般交易日"
         },
-        "previous_trading_date": "2026-11-04",
-        "next_trading_date": "2026-11-06",
-        "latest_data_date": "2026-11-04",
-        "expected_latest_data_date": "2026-11-04",
+        "previous_trading_date": "2026-11-05",
+        "next_trading_date": "2026-11-09",
+        "latest_data_date": "2026-11-05",
+        "expected_latest_data_date": "2026-11-05",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
             "due": true,
-            "ready": false
+            "ready": true
           },
           "afterhours": {
             "due": false,
