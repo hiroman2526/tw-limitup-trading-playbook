@@ -164,5 +164,75 @@
     "coverage_pct": 0.0,
     "source_counts": {},
     "missing_stock_ids": []
-  }
+  },
+  "paper_trading": {
+    "rule_version": "p2.11_v2",
+    "decision_date": "2026-11-06",
+    "candidate_count": 0,
+    "watch_count": 0,
+    "executed_count": 0,
+    "data_incomplete_count": 0,
+    "hold_review_count": 0,
+    "settled_count": 0,
+    "evidence_pending_count": 0,
+    "market_close_verified": false,
+    "output": "data/processed/p211_paper_trade_log.csv"
+  },
+  "paper_trading_records": [],
+  "p230_shadow": {
+    "schema_version": "p2.30.0",
+    "decision_date": "2026-11-06",
+    "baseline_rule_version": "p2.11_v2",
+    "shadow_rule_versions": [
+      "p2.30_d1_confirmed_v1",
+      "p2.30_d2_reclaim_hv_v1"
+    ],
+    "market_minute_verified": false,
+    "d1": {
+      "candidate_count": 0,
+      "confirmed_entry_count": 0,
+      "data_incomplete_count": 0
+    },
+    "d2": {
+      "active_watch_count": 1,
+      "confirmed_entry_count": 0,
+      "data_incomplete_count": 1
+    },
+    "allocated_count": 0,
+    "shadow_only": true,
+    "telegram_buy_alerts": false,
+    "minute_capture_attempts": [
+      {
+        "stock_id": "5013",
+        "attempts": [
+          {
+            "provider": "Fugle",
+            "row_count": 244,
+            "status": "usable"
+          }
+        ],
+        "row_count": 244
+      }
+    ]
+  },
+  "p230_shadow_records": [
+    {
+      "rule_version": "p2.30_d2_reclaim_hv_v1",
+      "strategy": "D2+高量重返",
+      "d0_date": "2026-11-03",
+      "d1_date": "2026-11-04",
+      "decision_date": "2026-11-06",
+      "stock_id": "5013",
+      "market": "TPEx",
+      "name": "強新",
+      "industry": "鋼鐵工業",
+      "sector_confirmed": false,
+      "open_gap_pct": 0.003003003,
+      "data_timestamp": "2026-11-06T13:30:00+08:00",
+      "data_source": "daily outcome + minute archive",
+      "shadow_only": true,
+      "paper_status": "data_incomplete",
+      "failure_reason": "missing_reclaim_stop_or_previous_close"
+    }
+  ]
 }
