@@ -1,8 +1,8 @@
 {
   "schema_version": "p2.20.1",
-  "checked_at": "2026-11-05T15:20:07.153073+08:00",
-  "phase": "afterhours",
-  "status": "ok",
+  "checked_at": "2026-11-06T09:10:05.122118+08:00",
+  "phase": "d1",
+  "status": "ok_with_publish_deferred",
   "errors": [],
   "versions": {
     "data": {
@@ -13,8 +13,8 @@
       "ignored_generated_changes_before_sync": [
         "data/reference/twse_holiday_calendar_2026.json"
       ],
-      "sync_exit_code": 0,
-      "sync_message": "Already up to date.",
+      "sync_exit_code": 1,
+      "sync_message": "fatal: unable to access 'https://github.com/bedstv/tw-market-data.git/': Failed to connect to github.com port 443 after 4 ms: Couldn't connect to server",
       "commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
       "origin_main": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
       "dirty_after_sync": false,
@@ -25,13 +25,13 @@
     "pages": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook",
       "exists": true,
-      "before_commit": "fc4f751c67b9f0c4cc82ccf5f95fe4045c2a02ff",
+      "before_commit": "5e2c0584a1b7c1d06513d25205dd11ce4279396d",
       "dirty_before_sync": false,
       "ignored_generated_changes_before_sync": [],
-      "sync_exit_code": 0,
-      "sync_message": "Already up to date.",
-      "commit": "fc4f751c67b9f0c4cc82ccf5f95fe4045c2a02ff",
-      "origin_main": "fc4f751c67b9f0c4cc82ccf5f95fe4045c2a02ff",
+      "sync_exit_code": 1,
+      "sync_message": "fatal: unable to access 'https://github.com/hiroman2526/tw-limitup-trading-playbook.git/': Failed to connect to github.com port 443 after 1 ms: Couldn't connect to server",
+      "commit": "5e2c0584a1b7c1d06513d25205dd11ce4279396d",
+      "origin_main": "5e2c0584a1b7c1d06513d25205dd11ce4279396d",
       "dirty_after_sync": false,
       "ignored_generated_changes_after_sync": []
     }
