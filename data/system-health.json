@@ -3,15 +3,13 @@
     "d1": {
       "schema_version": "p2.20.3",
       "phase": "d1",
-      "date": "2026-11-06",
-      "scheduled_at": "2026-11-06T09:16:00+08:00",
-      "checked_at": "2026-11-06T09:20:05.921805+08:00",
-      "actual_finished_at": "2026-11-06T09:16:27.583522+08:00",
-      "status": "failed",
-      "failed_step": "health_check",
-      "reasons": [
-        "Command '['git', '-C', '/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook', 'ls-remote', 'origin', 'refs/heads/main']' returned non-zero exit status 128."
-      ],
+      "date": "2026-11-09",
+      "scheduled_at": "2026-11-09T09:16:00+08:00",
+      "checked_at": "2026-11-09T09:20:05.769987+08:00",
+      "actual_finished_at": "2026-11-09T09:16:13.326170+08:00",
+      "status": "ok",
+      "failed_step": null,
+      "reasons": [],
       "steps": {
         "dashboard_data": {
           "status": "ok",
@@ -29,61 +27,72 @@
           "status": "ok",
           "detail": "交易日曆與資料新鮮度已更新"
         },
-        "health_check": {
-          "status": "failed",
-          "detail": "Command '['git', '-C', '/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook', 'ls-remote', 'origin', 'refs/heads/main']' returned non-zero exit status 128."
+        "pages_git": {
+          "status": "ok",
+          "detail": "GitHub main 已同步"
+        },
+        "public_dashboard": {
+          "status": "ok",
+          "detail": "看盤頁與每日資料均可公開讀取"
+        },
+        "telegram": {
+          "status": "ok",
+          "detail": "交易摘要已送達"
         }
       },
       "versions": {
         "preflight_data_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
-        "preflight_pages_commit": "5e2c0584a1b7c1d06513d25205dd11ce4279396d"
+        "preflight_pages_commit": "ab8a052e06acec5b4ba1aaae1987ae7c0c727072",
+        "pages_local_commit": "033a66af8e431036f9871dd1b95ed13983f8b627",
+        "pages_remote_commit": "033a66af8e431036f9871dd1b95ed13983f8b627",
+        "data_runtime_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "d1",
-        "date": "2026-11-06",
+        "date": "2026-11-09",
         "status": "ok",
         "retry_delay_seconds": 0,
         "attempts": [
           {
             "attempt": 1,
-            "started_at": "2026-11-06T09:16:05.925231+08:00",
-            "finished_at": "2026-11-06T09:16:27.583522+08:00",
+            "started_at": "2026-11-09T09:16:04.917177+08:00",
+            "finished_at": "2026-11-09T09:16:13.326170+08:00",
             "exit_code": 0,
-            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   5e2c058..230020a  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-11-06\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main 230020a] data: publish D1 09:15 decision\\n 1 file changed, 24 insertions(+), 8 deletions(-)\", \"recorded_at\": \"2026-11-06T09:16:11.499200+08:00\"}\nTelegram notification failed: The read operation timed out\n",
-            "stderr_tail": "Telegram notification failed after D1 data was published\n"
+            "stdout_tail": "{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   05c8a40..033a66a  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"d1\", \"date\": \"2026-11-09\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main 033a66a] data: publish D1 09:15 decision\\n 1 file changed, 53 insertions(+), 10 deletions(-)\", \"recorded_at\": \"2026-11-09T09:16:11.091936+08:00\"}\n",
+            "stderr_tail": ""
           }
         ],
-        "recorded_at": "2026-11-06T09:16:27.583590+08:00"
+        "recorded_at": "2026-11-09T09:16:13.326202+08:00"
       },
       "publication": {
         "status": "published",
         "failed_step": null,
         "reason": "",
-        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   5e2c058..230020a  main -> main",
+        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   05c8a40..033a66a  main -> main",
         "schema_version": "p2.20.4",
         "phase": "d1",
-        "date": "2026-11-06",
+        "date": "2026-11-09",
         "local_data_saved": true,
         "local_commit_created": true,
-        "local_commit_detail": "[main 230020a] data: publish D1 09:15 decision\n 1 file changed, 24 insertions(+), 8 deletions(-)",
-        "recorded_at": "2026-11-06T09:16:11.499200+08:00"
+        "local_commit_detail": "[main 033a66a] data: publish D1 09:15 decision\n 1 file changed, 53 insertions(+), 10 deletions(-)",
+        "recorded_at": "2026-11-09T09:16:11.091936+08:00"
       },
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-11-06T09:20:05.960390+08:00",
-        "as_of_date": "2026-11-06",
-        "calendar_source": "official_cache",
+        "checked_at": "2026-11-09T09:20:05.809450+08:00",
+        "as_of_date": "2026-11-09",
+        "calendar_source": "official_live",
         "market_day": {
-          "date": "2026-11-06",
+          "date": "2026-11-09",
           "status": "trading",
           "source": "weekday",
           "reason": "一般交易日"
         },
-        "previous_trading_date": "2026-11-05",
-        "next_trading_date": "2026-11-09",
-        "latest_data_date": "2026-11-05",
-        "expected_latest_data_date": "2026-11-05",
+        "previous_trading_date": "2026-11-06",
+        "next_trading_date": "2026-11-10",
+        "latest_data_date": "2026-11-06",
+        "expected_latest_data_date": "2026-11-06",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
@@ -95,7 +104,8 @@
             "ready": null
           }
         }
-      }
+      },
+      "telegram_delivery_status": "sent"
     },
     "afterhours": {
       "schema_version": "p2.20.3",
