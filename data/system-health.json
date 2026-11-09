@@ -110,93 +110,78 @@
     "afterhours": {
       "schema_version": "p2.20.3",
       "phase": "afterhours",
-      "date": "2026-11-06",
-      "scheduled_at": "2026-11-06T15:30:00+08:00",
-      "checked_at": "2026-11-06T15:45:05.940013+08:00",
-      "actual_finished_at": "2026-11-06T15:32:37.790496+08:00",
-      "status": "ok",
-      "failed_step": null,
-      "reasons": [],
+      "date": "2026-11-09",
+      "scheduled_at": "2026-11-09T15:30:00+08:00",
+      "checked_at": "2026-11-09T15:45:05.494353+08:00",
+      "actual_finished_at": "2026-11-09T15:35:54.105533+08:00",
+      "status": "failed",
+      "failed_step": "freshness",
+      "reasons": [
+        "找不到完整盤後資料",
+        "主排程重試後仍失敗",
+        "交易日應有盤後資料，但最新資料仍落後"
+      ],
       "steps": {
         "dashboard_data": {
-          "status": "ok",
-          "detail": "盤後資料已完整產生"
+          "status": "failed",
+          "detail": "找不到完整盤後資料"
         },
         "retry": {
-          "status": "ok",
-          "detail": "第一次完成"
+          "status": "failed",
+          "detail": "主排程重試後仍失敗"
         },
         "freshness": {
-          "status": "ok",
-          "detail": "交易日曆與資料新鮮度已更新"
-        },
-        "pages_git": {
-          "status": "ok",
-          "detail": "GitHub main 已同步"
-        },
-        "public_dashboard": {
-          "status": "ok",
-          "detail": "看盤頁與每日資料均可公開讀取"
-        },
-        "telegram": {
-          "status": "ok",
-          "detail": "交易摘要已送達"
+          "status": "failed",
+          "detail": "交易日應有盤後資料，但最新資料仍落後"
         }
       },
       "versions": {
         "preflight_data_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
-        "preflight_pages_commit": "1300a7129aedd758de66e51af63fcbd6fdda7222",
-        "pages_local_commit": "78eca176036fe6a929de28a1313db56c8635469b",
-        "pages_remote_commit": "78eca176036fe6a929de28a1313db56c8635469b",
-        "data_runtime_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80"
+        "preflight_pages_commit": "a487714d311ec8e67407b3a176659cfe0eff70a6"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "afterhours",
-        "date": "2026-11-06",
-        "status": "ok",
-        "retry_delay_seconds": 0,
+        "date": "2026-11-09",
+        "status": "failed",
+        "retry_delay_seconds": 120,
         "attempts": [
           {
             "attempt": 1,
-            "started_at": "2026-11-06T15:30:04.929233+08:00",
-            "finished_at": "2026-11-06T15:32:37.790496+08:00",
-            "exit_code": 0,
-            "stdout_tail": "\", \"2026-10-22\", \"2026-10-27\", \"2026-10-28\", \"2026-10-30\", \"2026-11-03\", \"2026-11-04\", \"2026-11-05\"], \"candidate_count\": 131, \"data_incomplete_count\": 0, \"provider_counts\": {\"Fugle\": 129, \"未取得完整分鐘線\": 2}, \"finmind_unavailable_observations\": 0, \"historical_backtest_allowed\": false, \"status\": \"insufficient_historical_coverage\", \"reason\": \"需有至少 60 個完整 D1 分鐘線判斷日才可重跑歷史分鐘回測；目前僅保留 forward 封存資料。\", \"source_policy\": \"同一股票日只使用單一來源；Fugle 近期 1 分鐘線優先，FinMind TaiwanStockKBar 僅在帳號授權時使用。\"}\n{\n  \"schema_version\": \"p2.30.0\",\n  \"decision_date\": \"2026-11-06\",\n  \"baseline_rule_version\": \"p2.11_v2\",\n  \"shadow_rule_versions\": [\n    \"p2.30_d1_confirmed_v1\",\n    \"p2.30_d2_reclaim_hv_v1\"\n  ],\n  \"market_minute_verified\": false,\n  \"d1\": {\n    \"candidate_count\": 0,\n    \"confirmed_entry_count\": 0,\n    \"data_incomplete_count\": 0\n  },\n  \"d2\": {\n    \"active_watch_count\": 1,\n    \"confirmed_entry_count\": 0,\n    \"data_incomplete_count\": 1\n  },\n  \"allocated_count\": 0,\n  \"shadow_only\": true,\n  \"telegram_buy_alerts\": false,\n  \"minute_capture_attempts\": [\n    {\n      \"stock_id\": \"5013\",\n      \"attempts\": [\n        {\n          \"provider\": \"Fugle\",\n          \"row_count\": 244,\n          \"status\": \"usable\"\n        }\n      ],\n      \"row_count\": 244\n    }\n  ]\n}\n{\"output\": \"/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook/data/p230-shadow-evaluation.json\", \"d1_records\": 168, \"d2_records\": 17}\n{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   a4d2ff4..78eca17  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"afterhours\", \"date\": \"2026-11-06\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main 78eca17] data: publish 2026-11-06 after-hours dashboard\\n 4 files changed, 152 insertions(+), 12 deletions(-)\\n create mode 100644 data/daily/2026-11-06.json\", \"recorded_at\": \"2026-11-06T15:32:36.003166+08:00\"}\n{\"p3_development_gate\": \"not_ready\", \"p230_shadow_gate\": \"not_ready\"}\n",
-            "stderr_tail": ""
+            "started_at": "2026-11-09T15:30:05.457624+08:00",
+            "finished_at": "2026-11-09T15:32:25.712447+08:00",
+            "exit_code": 1,
+            "stdout_tail": "y\",\n        \"--as-of-date\",\n        \"2026-11-09\",\n        \"--event-tag\",\n        \"p12_2016_2026\",\n        \"--outcome-tag\",\n        \"p13_2016_2026_selected\",\n        \"--risk-tag\",\n        \"p19_2016_2026_selected\",\n        \"--regime-tag\",\n        \"p18_2016_2026_selected\",\n        \"--output-tag\",\n        \"2026-11-09\"\n      ],\n      \"returncode\": 0,\n      \"elapsed_seconds\": 0.41,\n      \"stdout_tail\": \"{\\n  \\\"schema_version\\\": \\\"2.0.0\\\",\\n  \\\"output_tag\\\": \\\"2026-11-09\\\",\\n  \\\"as_of_date\\\": \\\"2026-11-09\\\",\\n  \\\"effective_date\\\": \\\"2026-11-09\\\",\\n  \\\"previous_trade_date\\\": \\\"2026-11-06\\\",\\n  \\\"recent_d1_dates_for_d2_watch\\\": [\\n    \\\"2026-11-02\\\",\\n    \\\"2026-11-03\\\",\\n    \\\"2026-11-04\\\",\\n    \\\"2026-11-05\\\",\\n    \\\"2026-11-06\\\"\\n  ],\\n  \\\"d0_candidate_count\\\": 1,\\n  \\\"d1_watch_count\\\": 1,\\n  \\\"d1_abnormal_gap_check_count\\\": 0,\\n  \\\"d1_blowoff_count\\\": 0,\\n  \\\"d2_watch_count\\\": 0,\\n  \\\"d2_reclaimed_count\\\": 0,\\n  \\\"trade_ready\\\": false,\\n  \\\"limitations\\\": [\\n    \\\"Offline prototype based on processed files; not a live data pull.\\\",\\n    \\\"Uses D0 daily TAIEX regime, not D1 09:15 intraday regime.\\\",\\n    \\\"Risk flags are not full historical as-of verified.\\\"\\n  ],\\n  \\\"outputs\\\": {\\n    \\\"d0_candidates\\\": {\\n      \\\"path\\\": \\\"data/processed/daily_brief_d0_candidates_2026-11-09.csv\\\",\\n      \\\"sha256\\\": \\\"9c9e9f2ebbdb3400ff3f683d97c46edcdfb4618f8c19908c83ee6dd3801a97ef\\\"\\n    },\\n    \\\"d1_watch\\\": {\\n      \\\"path\\\": \\\"data/processed/daily_brief_d1_watch_2026-11-09.csv\\\",\\n      \\\"sha256\\\": \\\"a2ee991eb099a10dfa5240c10ccfdddf18af0e6bfff9cd91f331a37c606e40b4\\\"\\n    },\\n    \\\"d2_watch\\\": {\\n      \\\"path\\\": \\\"data/processed/daily_brief_d2_watch_2026-11-09.csv\\\",\\n      \\\"sha256\\\": \\\"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\\\"\\n    },\\n    \\\"markdown\\\": {\\n      \\\"path\\\": \\\"data/reports/daily_brief_2026-11-09.md\\\",\\n      \\\"sha256\\\": \\\"4f87b624d7e0e760c6752ec469fdd508f151510633939d6759c724610051222a\\\"\\n    }\\n  }\\n}\\n\",\n      \"stderr_tail\": \"\"\n    }\n  ]\n}\n",
+            "stderr_tail": "e exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/build_p24_corporate_actions.py\", line 52, in <module>\n    main()\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/build_p24_corporate_actions.py\", line 25, in main\n    rows = fetch_official_actions(args.start_date, args.end_date)\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/corporate_actions.py\", line 165, in fetch_official_actions\n    payload = fetch_json(\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/corporate_actions.py\", line 18, in fetch_json\n    with urllib.request.urlopen(request, timeout=60) as response:\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 214, in urlopen\n    return opener.open(url, data, timeout)\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 517, in open\n    response = self._open(req, data)\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 534, in _open\n    result = self._call_chain(self.handle_open, protocol, protocol +\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 494, in _call_chain\n    result = func(*args)\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 1389, in https_open\n    return self.do_open(http.client.HTTPSConnection, req,\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 1349, in do_open\n    raise URLError(err)\nurllib.error.URLError: <urlopen error [Errno 49] Can't assign requested address>\n"
+          },
+          {
+            "attempt": 2,
+            "started_at": "2026-11-09T15:34:25.714996+08:00",
+            "finished_at": "2026-11-09T15:35:54.105533+08:00",
+            "exit_code": 1,
+            "stdout_tail": "\",\n        \"--as-of-date\",\n        \"2026-11-09\",\n        \"--event-tag\",\n        \"p12_2016_2026\",\n        \"--outcome-tag\",\n        \"p13_2016_2026_selected\",\n        \"--risk-tag\",\n        \"p19_2016_2026_selected\",\n        \"--regime-tag\",\n        \"p18_2016_2026_selected\",\n        \"--output-tag\",\n        \"2026-11-09\"\n      ],\n      \"returncode\": 0,\n      \"elapsed_seconds\": 0.395,\n      \"stdout_tail\": \"{\\n  \\\"schema_version\\\": \\\"2.0.0\\\",\\n  \\\"output_tag\\\": \\\"2026-11-09\\\",\\n  \\\"as_of_date\\\": \\\"2026-11-09\\\",\\n  \\\"effective_date\\\": \\\"2026-11-09\\\",\\n  \\\"previous_trade_date\\\": \\\"2026-11-06\\\",\\n  \\\"recent_d1_dates_for_d2_watch\\\": [\\n    \\\"2026-11-02\\\",\\n    \\\"2026-11-03\\\",\\n    \\\"2026-11-04\\\",\\n    \\\"2026-11-05\\\",\\n    \\\"2026-11-06\\\"\\n  ],\\n  \\\"d0_candidate_count\\\": 1,\\n  \\\"d1_watch_count\\\": 1,\\n  \\\"d1_abnormal_gap_check_count\\\": 0,\\n  \\\"d1_blowoff_count\\\": 0,\\n  \\\"d2_watch_count\\\": 0,\\n  \\\"d2_reclaimed_count\\\": 0,\\n  \\\"trade_ready\\\": false,\\n  \\\"limitations\\\": [\\n    \\\"Offline prototype based on processed files; not a live data pull.\\\",\\n    \\\"Uses D0 daily TAIEX regime, not D1 09:15 intraday regime.\\\",\\n    \\\"Risk flags are not full historical as-of verified.\\\"\\n  ],\\n  \\\"outputs\\\": {\\n    \\\"d0_candidates\\\": {\\n      \\\"path\\\": \\\"data/processed/daily_brief_d0_candidates_2026-11-09.csv\\\",\\n      \\\"sha256\\\": \\\"9c9e9f2ebbdb3400ff3f683d97c46edcdfb4618f8c19908c83ee6dd3801a97ef\\\"\\n    },\\n    \\\"d1_watch\\\": {\\n      \\\"path\\\": \\\"data/processed/daily_brief_d1_watch_2026-11-09.csv\\\",\\n      \\\"sha256\\\": \\\"a2ee991eb099a10dfa5240c10ccfdddf18af0e6bfff9cd91f331a37c606e40b4\\\"\\n    },\\n    \\\"d2_watch\\\": {\\n      \\\"path\\\": \\\"data/processed/daily_brief_d2_watch_2026-11-09.csv\\\",\\n      \\\"sha256\\\": \\\"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\\\"\\n    },\\n    \\\"markdown\\\": {\\n      \\\"path\\\": \\\"data/reports/daily_brief_2026-11-09.md\\\",\\n      \\\"sha256\\\": \\\"4f87b624d7e0e760c6752ec469fdd508f151510633939d6759c724610051222a\\\"\\n    }\\n  }\\n}\\n\",\n      \"stderr_tail\": \"\"\n    }\n  ]\n}\n",
+            "stderr_tail": "ck (most recent call last):\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/build_p24_corporate_actions.py\", line 52, in <module>\n    main()\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/scripts/build_p24_corporate_actions.py\", line 25, in main\n    rows = fetch_official_actions(args.start_date, args.end_date)\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/corporate_actions.py\", line 134, in fetch_official_actions\n    fetch_json(\"https://openapi.twse.com.tw/v1/exchangeReport/TWT48U_ALL\")\n  File \"/Users/suh/.local/share/tw-stock-runtime/tw-market-data/src/tw_market_data/corporate_actions.py\", line 18, in fetch_json\n    with urllib.request.urlopen(request, timeout=60) as response:\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 214, in urlopen\n    return opener.open(url, data, timeout)\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 517, in open\n    response = self._open(req, data)\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 534, in _open\n    result = self._call_chain(self.handle_open, protocol, protocol +\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 494, in _call_chain\n    result = func(*args)\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 1389, in https_open\n    return self.do_open(http.client.HTTPSConnection, req,\n  File \"/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/urllib/request.py\", line 1349, in do_open\n    raise URLError(err)\nurllib.error.URLError: <urlopen error [Errno 49] Can't assign requested address>\n"
           }
         ],
-        "recorded_at": "2026-11-06T15:32:37.790659+08:00"
+        "recorded_at": "2026-11-09T15:35:54.105564+08:00"
       },
-      "publication": {
-        "status": "published",
-        "failed_step": null,
-        "reason": "",
-        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   a4d2ff4..78eca17  main -> main",
-        "schema_version": "p2.20.4",
-        "phase": "afterhours",
-        "date": "2026-11-06",
-        "local_data_saved": true,
-        "local_commit_created": true,
-        "local_commit_detail": "[main 78eca17] data: publish 2026-11-06 after-hours dashboard\n 4 files changed, 152 insertions(+), 12 deletions(-)\n create mode 100644 data/daily/2026-11-06.json",
-        "recorded_at": "2026-11-06T15:32:36.003166+08:00"
-      },
+      "publication": {},
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-11-06T15:45:05.976135+08:00",
-        "as_of_date": "2026-11-06",
-        "calendar_source": "official_live",
+        "checked_at": "2026-11-09T15:45:05.537956+08:00",
+        "as_of_date": "2026-11-09",
+        "calendar_source": "official_cache",
         "market_day": {
-          "date": "2026-11-06",
+          "date": "2026-11-09",
           "status": "trading",
           "source": "weekday",
           "reason": "一般交易日"
         },
-        "previous_trading_date": "2026-11-05",
-        "next_trading_date": "2026-11-09",
+        "previous_trading_date": "2026-11-06",
+        "next_trading_date": "2026-11-10",
         "latest_data_date": "2026-11-06",
-        "expected_latest_data_date": "2026-11-06",
-        "is_stale": false,
+        "expected_latest_data_date": "2026-11-09",
+        "is_stale": true,
         "expectations": {
           "d1_0915": {
             "due": true,
@@ -204,11 +189,10 @@
           },
           "afterhours": {
             "due": true,
-            "ready": true
+            "ready": false
           }
         }
-      },
-      "telegram_delivery_status": "sent"
+      }
     }
   }
 }
