@@ -1,8 +1,8 @@
 {
   "schema_version": "p2.20.1",
-  "checked_at": "2026-11-09T15:20:04.689546+08:00",
-  "phase": "afterhours",
-  "status": "ok_with_publish_deferred",
+  "checked_at": "2026-11-10T09:10:09.503385+08:00",
+  "phase": "d1",
+  "status": "ok",
   "errors": [],
   "versions": {
     "data": {
@@ -13,8 +13,8 @@
       "ignored_generated_changes_before_sync": [
         "data/reference/twse_holiday_calendar_2026.json"
       ],
-      "sync_exit_code": 1,
-      "sync_message": "fatal: unable to access 'https://github.com/bedstv/tw-market-data.git/': Failed to connect to github.com port 443 after 3 ms: Couldn't connect to server",
+      "sync_exit_code": 0,
+      "sync_message": "Already up to date.",
       "commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
       "origin_main": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
       "dirty_after_sync": false,
@@ -25,13 +25,15 @@
     "pages": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook",
       "exists": true,
-      "before_commit": "a487714d311ec8e67407b3a176659cfe0eff70a6",
+      "before_commit": "dcea4ec6529a1b38dcfe064d3949e7bf561c212f",
       "dirty_before_sync": false,
       "ignored_generated_changes_before_sync": [],
-      "sync_exit_code": 1,
-      "sync_message": "fatal: unable to access 'https://github.com/hiroman2526/tw-limitup-trading-playbook.git/': Failed to connect to github.com port 443 after 1 ms: Couldn't connect to server",
-      "commit": "a487714d311ec8e67407b3a176659cfe0eff70a6",
-      "origin_main": "033a66af8e431036f9871dd1b95ed13983f8b627",
+      "sync_exit_code": 0,
+      "sync_message": "Already up to date.",
+      "commit": "dcea4ec6529a1b38dcfe064d3949e7bf561c212f",
+      "origin_main": "dcea4ec6529a1b38dcfe064d3949e7bf561c212f",
+      "recovery_push_exit_code": 0,
+      "recovery_push_message": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   033a66a..dcea4ec  main -> main",
       "dirty_after_sync": false,
       "ignored_generated_changes_after_sync": []
     }
