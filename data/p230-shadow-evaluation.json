@@ -87,14 +87,14 @@
         "message": "影子樣本持續收集中，尚未達正式升級門檻。"
       }
     },
-    "p2.30_d2_reclaim_hv_v1": {
+    "p2.31_d2_reclaim_primary_gap_v1": {
       "label": "D2+高量重返（影子）",
       "normal": {
-        "candidate_count": 17,
+        "candidate_count": 0,
         "confirmed_entry_count": 0,
         "settled_count": 0,
-        "no_entry_count": 10,
-        "data_incomplete_count": 7,
+        "no_entry_count": 0,
+        "data_incomplete_count": 0,
         "average_net_return": null,
         "median_net_return": null,
         "win_rate": null,
@@ -104,11 +104,11 @@
         "largest_winner_profit_contribution": null
       },
       "stress": {
-        "candidate_count": 17,
+        "candidate_count": 0,
         "confirmed_entry_count": 0,
         "settled_count": 0,
-        "no_entry_count": 10,
-        "data_incomplete_count": 7,
+        "no_entry_count": 0,
+        "data_incomplete_count": 0,
         "average_net_return": null,
         "median_net_return": null,
         "win_rate": null,
@@ -119,400 +119,400 @@
       },
       "historical_daily_proxy": {
         "schema_version": "p2.30.0",
-        "rule_version": "p2.30_d2_reclaim_hv_v1",
+        "rule_version": "p2.31_d2_reclaim_primary_gap_v1",
         "validation_type": "fixed_rule_expanding_year_daily_proxy",
         "overall": {
-          "signal_count": 19,
-          "settled_count": 5,
-          "average_net_return": 0.06542432714,
-          "median_net_return": 0.1027719298,
-          "win_rate": 0.8,
-          "profit_factor": 6.877650209201401,
-          "stop_loss_rate": 0.2,
-          "max_drawdown_equal_weight": -0.05565517240000001
+          "signal_count": 3968,
+          "settled_count": 129,
+          "average_net_return": 0.0147224993751938,
+          "median_net_return": -0.0333972603,
+          "win_rate": 0.40310077519379844,
+          "profit_factor": 1.440900710852142,
+          "stop_loss_rate": 0.43410852713178294,
+          "max_drawdown_equal_weight": -0.7089020160999995
         },
         "normal_cost": {
-          "signal_count": 19,
-          "settled_count": 5,
-          "average_net_return": 0.06842432714,
-          "median_net_return": 0.1057719298,
-          "win_rate": 0.8,
-          "profit_factor": 7.497398453109993,
-          "stop_loss_rate": 0.2,
-          "max_drawdown_equal_weight": -0.052655172400000005
+          "signal_count": 3968,
+          "settled_count": 129,
+          "average_net_return": 0.0177224993751938,
+          "median_net_return": -0.0303972603,
+          "win_rate": 0.40310077519379844,
+          "profit_factor": 1.5608177758342043,
+          "stop_loss_rate": 0.43410852713178294,
+          "max_drawdown_equal_weight": -0.6489020160999999
         },
         "stress_cost": {
-          "signal_count": 19,
-          "settled_count": 5,
-          "average_net_return": 0.06542432714,
-          "median_net_return": 0.1027719298,
-          "win_rate": 0.8,
-          "profit_factor": 6.877650209201401,
-          "stop_loss_rate": 0.2,
-          "max_drawdown_equal_weight": -0.05565517240000001
+          "signal_count": 3968,
+          "settled_count": 129,
+          "average_net_return": 0.0147224993751938,
+          "median_net_return": -0.0333972603,
+          "win_rate": 0.40310077519379844,
+          "profit_factor": 1.440900710852142,
+          "stop_loss_rate": 0.43410852713178294,
+          "max_drawdown_equal_weight": -0.7089020160999995
         },
         "years": [
           {
             "test_year": 2016,
             "test_normal": {
-              "signal_count": 0,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 112,
+              "settled_count": 1,
+              "average_net_return": -0.0341688312,
+              "median_net_return": -0.0341688312,
+              "win_rate": 0.0,
+              "profit_factor": 0.0,
+              "stop_loss_rate": 1.0,
+              "max_drawdown_equal_weight": -0.0341688312
             },
             "test_stress": {
-              "signal_count": 0,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 112,
+              "settled_count": 1,
+              "average_net_return": -0.0371688312,
+              "median_net_return": -0.0371688312,
+              "win_rate": 0.0,
+              "profit_factor": 0.0,
+              "stop_loss_rate": 1.0,
+              "max_drawdown_equal_weight": -0.0371688312
             },
             "expanding_through_year_stress": {
-              "signal_count": 0,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 112,
+              "settled_count": 1,
+              "average_net_return": -0.0371688312,
+              "median_net_return": -0.0371688312,
+              "win_rate": 0.0,
+              "profit_factor": 0.0,
+              "stop_loss_rate": 1.0,
+              "max_drawdown_equal_weight": -0.0371688312
             }
           },
           {
             "test_year": 2017,
             "test_normal": {
-              "signal_count": 1,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 367,
+              "settled_count": 11,
+              "average_net_return": 0.04004410243636364,
+              "median_net_return": 0.0145182482,
+              "win_rate": 0.5454545454545454,
+              "profit_factor": 2.7699812018756247,
+              "stop_loss_rate": 0.36363636363636365,
+              "max_drawdown_equal_weight": -0.18309962689999998
             },
             "test_stress": {
-              "signal_count": 1,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 367,
+              "settled_count": 11,
+              "average_net_return": 0.037044102436363635,
+              "median_net_return": 0.0115182482,
+              "win_rate": 0.5454545454545454,
+              "profit_factor": 2.5442980806824314,
+              "stop_loss_rate": 0.36363636363636365,
+              "max_drawdown_equal_weight": -0.1920996269
             },
             "expanding_through_year_stress": {
-              "signal_count": 1,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 479,
+              "settled_count": 12,
+              "average_net_return": 0.0308596913,
+              "median_net_return": 0.00090038805,
+              "win_rate": 0.5,
+              "profit_factor": 2.23015130695526,
+              "stop_loss_rate": 0.4166666666666667,
+              "max_drawdown_equal_weight": -0.1920996269
             }
           },
           {
             "test_year": 2018,
             "test_normal": {
-              "signal_count": 1,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 203,
+              "settled_count": 5,
+              "average_net_return": -0.0368043299,
+              "median_net_return": -0.0504860335,
+              "win_rate": 0.2,
+              "profit_factor": 0.10104356807372296,
+              "stop_loss_rate": 0.6,
+              "max_drawdown_equal_weight": -0.1840216495
             },
             "test_stress": {
-              "signal_count": 1,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 203,
+              "settled_count": 5,
+              "average_net_return": -0.0398043299,
+              "median_net_return": -0.0534860335,
+              "win_rate": 0.2,
+              "profit_factor": 0.0816046714195915,
+              "stop_loss_rate": 0.6,
+              "max_drawdown_equal_weight": -0.1990216495
             },
             "expanding_through_year_stress": {
-              "signal_count": 2,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 682,
+              "settled_count": 17,
+              "average_net_return": 0.010076155652941177,
+              "median_net_return": -0.0194615385,
+              "win_rate": 0.4117647058823529,
+              "profit_factor": 1.3308513558692439,
+              "stop_loss_rate": 0.47058823529411764,
+              "max_drawdown_equal_weight": -0.20873912160000002
             }
           },
           {
             "test_year": 2019,
             "test_normal": {
-              "signal_count": 0,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 166,
+              "settled_count": 1,
+              "average_net_return": -0.0519795918,
+              "median_net_return": -0.0519795918,
+              "win_rate": 0.0,
+              "profit_factor": 0.0,
+              "stop_loss_rate": 1.0,
+              "max_drawdown_equal_weight": -0.0519795918
             },
             "test_stress": {
-              "signal_count": 0,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 166,
+              "settled_count": 1,
+              "average_net_return": -0.0549795918,
+              "median_net_return": -0.0549795918,
+              "win_rate": 0.0,
+              "profit_factor": 0.0,
+              "stop_loss_rate": 1.0,
+              "max_drawdown_equal_weight": -0.0549795918
             },
             "expanding_through_year_stress": {
-              "signal_count": 2,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 848,
+              "settled_count": 18,
+              "average_net_return": 0.006461947461111111,
+              "median_net_return": -0.02831518485,
+              "win_rate": 0.3888888888888889,
+              "profit_factor": 1.203092859989346,
+              "stop_loss_rate": 0.5,
+              "max_drawdown_equal_weight": -0.2637187134
             }
           },
           {
             "test_year": 2020,
             "test_normal": {
-              "signal_count": 2,
-              "settled_count": 1,
-              "average_net_return": 0.0144291939,
-              "median_net_return": 0.0144291939,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 481,
+              "settled_count": 12,
+              "average_net_return": 0.026410383083333336,
+              "median_net_return": 0.00456517165,
+              "win_rate": 0.5,
+              "profit_factor": 2.3056182656387887,
+              "stop_loss_rate": 0.3333333333333333,
+              "max_drawdown_equal_weight": -0.189958616
             },
             "test_stress": {
-              "signal_count": 2,
-              "settled_count": 1,
-              "average_net_return": 0.0114291939,
-              "median_net_return": 0.0114291939,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 481,
+              "settled_count": 12,
+              "average_net_return": 0.023410383083333333,
+              "median_net_return": 0.0015651716500000006,
+              "win_rate": 0.5,
+              "profit_factor": 2.0774164739413177,
+              "stop_loss_rate": 0.3333333333333333,
+              "max_drawdown_equal_weight": -0.198958616
             },
             "expanding_through_year_stress": {
-              "signal_count": 4,
-              "settled_count": 1,
-              "average_net_return": 0.0114291939,
-              "median_net_return": 0.0114291939,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 1329,
+              "settled_count": 30,
+              "average_net_return": 0.01324132171,
+              "median_net_return": -0.00992485175,
+              "win_rate": 0.43333333333333335,
+              "profit_factor": 1.4766164655027942,
+              "stop_loss_rate": 0.43333333333333335,
+              "max_drawdown_equal_weight": -0.29817041699999997
             }
           },
           {
             "test_year": 2021,
             "test_normal": {
-              "signal_count": 1,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 703,
+              "settled_count": 23,
+              "average_net_return": 0.03823402407391304,
+              "median_net_return": -0.0195562914,
+              "win_rate": 0.391304347826087,
+              "profit_factor": 2.3150199685878263,
+              "stop_loss_rate": 0.34782608695652173,
+              "max_drawdown_equal_weight": -0.2646364516
             },
             "test_stress": {
-              "signal_count": 1,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 703,
+              "settled_count": 23,
+              "average_net_return": 0.035234024073913045,
+              "median_net_return": -0.0225562914,
+              "win_rate": 0.391304347826087,
+              "profit_factor": 2.140224662944511,
+              "stop_loss_rate": 0.34782608695652173,
+              "max_drawdown_equal_weight": -0.2886364516
             },
             "expanding_through_year_stress": {
-              "signal_count": 5,
-              "settled_count": 1,
-              "average_net_return": 0.0114291939,
-              "median_net_return": 0.0114291939,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 2032,
+              "settled_count": 53,
+              "average_net_return": 0.02278532462264151,
+              "median_net_return": -0.0143752094,
+              "win_rate": 0.41509433962264153,
+              "profit_factor": 1.7820478154314157,
+              "stop_loss_rate": 0.39622641509433965,
+              "max_drawdown_equal_weight": -0.29817041699999997
             }
           },
           {
             "test_year": 2022,
             "test_normal": {
-              "signal_count": 2,
-              "settled_count": 1,
-              "average_net_return": 0.1057719298,
-              "median_net_return": 0.1057719298,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 176,
+              "settled_count": 11,
+              "average_net_return": -0.015683718763636365,
+              "median_net_return": -0.0633070175,
+              "win_rate": 0.36363636363636365,
+              "profit_factor": 0.6842866459400412,
+              "stop_loss_rate": 0.45454545454545453,
+              "max_drawdown_equal_weight": -0.3106298326
             },
             "test_stress": {
-              "signal_count": 2,
-              "settled_count": 1,
-              "average_net_return": 0.1027719298,
-              "median_net_return": 0.1027719298,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 176,
+              "settled_count": 11,
+              "average_net_return": -0.018683718763636364,
+              "median_net_return": -0.0663070175,
+              "win_rate": 0.36363636363636365,
+              "profit_factor": 0.6378153865983737,
+              "stop_loss_rate": 0.45454545454545453,
+              "max_drawdown_equal_weight": -0.3286298326
             },
             "expanding_through_year_stress": {
-              "signal_count": 7,
-              "settled_count": 2,
-              "average_net_return": 0.057100561849999995,
-              "median_net_return": 0.057100561849999995,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 2208,
+              "settled_count": 64,
+              "average_net_return": 0.015657832790625,
+              "median_net_return": -0.02100891495,
+              "win_rate": 0.40625,
+              "profit_factor": 1.4745634990967136,
+              "stop_loss_rate": 0.40625,
+              "max_drawdown_equal_weight": -0.32862983259999967
             }
           },
           {
             "test_year": 2023,
             "test_normal": {
-              "signal_count": 2,
-              "settled_count": 1,
-              "average_net_return": 0.1118148148,
-              "median_net_return": 0.1118148148,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 433,
+              "settled_count": 13,
+              "average_net_return": -0.0198881416,
+              "median_net_return": -0.0453976608,
+              "win_rate": 0.3076923076923077,
+              "profit_factor": 0.4936387214252607,
+              "stop_loss_rate": 0.5384615384615384,
+              "max_drawdown_equal_weight": -0.3252437713
             },
             "test_stress": {
-              "signal_count": 2,
-              "settled_count": 1,
-              "average_net_return": 0.1088148148,
-              "median_net_return": 0.1088148148,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 433,
+              "settled_count": 13,
+              "average_net_return": -0.0228881416,
+              "median_net_return": -0.0483976608,
+              "win_rate": 0.3076923076923077,
+              "profit_factor": 0.4465247839540586,
+              "stop_loss_rate": 0.5384615384615384,
+              "max_drawdown_equal_weight": -0.35824377129999996
             },
             "expanding_through_year_stress": {
-              "signal_count": 9,
-              "settled_count": 3,
-              "average_net_return": 0.07433864616666666,
-              "median_net_return": 0.1027719298,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 2641,
+              "settled_count": 77,
+              "average_net_return": 0.00915007088051948,
+              "median_net_return": -0.0342685512,
+              "win_rate": 0.38961038961038963,
+              "profit_factor": 1.2659479597362646,
+              "stop_loss_rate": 0.42857142857142855,
+              "max_drawdown_equal_weight": -0.6868736038999995
             }
           },
           {
             "test_year": 2024,
             "test_normal": {
-              "signal_count": 6,
-              "settled_count": 1,
-              "average_net_return": -0.0526551724,
-              "median_net_return": -0.0526551724,
-              "win_rate": 0.0,
-              "profit_factor": 0.0,
-              "stop_loss_rate": 1.0,
-              "max_drawdown_equal_weight": -0.0526551724
+              "signal_count": 556,
+              "settled_count": 20,
+              "average_net_return": 0.06060607038,
+              "median_net_return": 0.0297505504,
+              "win_rate": 0.6,
+              "profit_factor": 3.6803109164040024,
+              "stop_loss_rate": 0.3,
+              "max_drawdown_equal_weight": -0.12138287189999986
             },
             "test_stress": {
-              "signal_count": 6,
-              "settled_count": 1,
-              "average_net_return": -0.0556551724,
-              "median_net_return": -0.0556551724,
-              "win_rate": 0.0,
-              "profit_factor": 0.0,
-              "stop_loss_rate": 1.0,
-              "max_drawdown_equal_weight": -0.0556551724
+              "signal_count": 556,
+              "settled_count": 20,
+              "average_net_return": 0.057606070380000006,
+              "median_net_return": 0.0267505504,
+              "win_rate": 0.6,
+              "profit_factor": 3.4192458149898117,
+              "stop_loss_rate": 0.3,
+              "max_drawdown_equal_weight": -0.12738287190000008
             },
             "expanding_through_year_stress": {
-              "signal_count": 15,
-              "settled_count": 4,
-              "average_net_return": 0.041840191525,
-              "median_net_return": 0.057100561849999995,
-              "win_rate": 0.75,
-              "profit_factor": 4.007101746036456,
-              "stop_loss_rate": 0.25,
-              "max_drawdown_equal_weight": -0.05565517240000001
+              "signal_count": 3197,
+              "settled_count": 97,
+              "average_net_return": 0.019140998612371136,
+              "median_net_return": -0.0194615385,
+              "win_rate": 0.4329896907216495,
+              "profit_factor": 1.5940501668868698,
+              "stop_loss_rate": 0.4020618556701031,
+              "max_drawdown_equal_weight": -0.7089020160999995
             }
           },
           {
             "test_year": 2025,
             "test_normal": {
-              "signal_count": 2,
-              "settled_count": 1,
-              "average_net_return": 0.1627608696,
-              "median_net_return": 0.1627608696,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 261,
+              "settled_count": 19,
+              "average_net_return": 0.00962440595263158,
+              "median_net_return": -0.0367423313,
+              "win_rate": 0.3157894736842105,
+              "profit_factor": 1.3070568939831733,
+              "stop_loss_rate": 0.47368421052631576,
+              "max_drawdown_equal_weight": -0.2942701835
             },
             "test_stress": {
-              "signal_count": 2,
-              "settled_count": 1,
-              "average_net_return": 0.1597608696,
-              "median_net_return": 0.1597608696,
-              "win_rate": 1.0,
-              "profit_factor": null,
-              "stop_loss_rate": 0.0,
-              "max_drawdown_equal_weight": 0.0
+              "signal_count": 261,
+              "settled_count": 19,
+              "average_net_return": 0.0066244059526315785,
+              "median_net_return": -0.0397423313,
+              "win_rate": 0.3157894736842105,
+              "profit_factor": 1.1983552281868877,
+              "stop_loss_rate": 0.47368421052631576,
+              "max_drawdown_equal_weight": -0.3152701835
             },
             "expanding_through_year_stress": {
-              "signal_count": 17,
-              "settled_count": 5,
-              "average_net_return": 0.06542432714,
-              "median_net_return": 0.1027719298,
-              "win_rate": 0.8,
-              "profit_factor": 6.877650209201401,
-              "stop_loss_rate": 0.2,
-              "max_drawdown_equal_weight": -0.05565517240000001
+              "signal_count": 3458,
+              "settled_count": 116,
+              "average_net_return": 0.017090867056034482,
+              "median_net_return": -0.029288241550000003,
+              "win_rate": 0.41379310344827586,
+              "profit_factor": 1.5272726122299167,
+              "stop_loss_rate": 0.41379310344827586,
+              "max_drawdown_equal_weight": -0.7089020160999995
             }
           },
           {
             "test_year": 2026,
             "test_normal": {
-              "signal_count": 2,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 510,
+              "settled_count": 13,
+              "average_net_return": -0.0034106276230769232,
+              "median_net_return": -0.0471767068,
+              "win_rate": 0.3076923076923077,
+              "profit_factor": 0.9148259866034334,
+              "stop_loss_rate": 0.6153846153846154,
+              "max_drawdown_equal_weight": -0.3442566321
             },
             "test_stress": {
-              "signal_count": 2,
-              "settled_count": 0,
-              "average_net_return": null,
-              "median_net_return": null,
-              "win_rate": null,
-              "profit_factor": null,
-              "stop_loss_rate": null,
-              "max_drawdown_equal_weight": null
+              "signal_count": 510,
+              "settled_count": 13,
+              "average_net_return": -0.006410627623076924,
+              "median_net_return": -0.0501767068,
+              "win_rate": 0.3076923076923077,
+              "profit_factor": 0.8478007810402369,
+              "stop_loss_rate": 0.6153846153846154,
+              "max_drawdown_equal_weight": -0.36225663210000003
             },
             "expanding_through_year_stress": {
-              "signal_count": 19,
-              "settled_count": 5,
-              "average_net_return": 0.06542432714,
-              "median_net_return": 0.1027719298,
-              "win_rate": 0.8,
-              "profit_factor": 6.877650209201401,
-              "stop_loss_rate": 0.2,
-              "max_drawdown_equal_weight": -0.05565517240000001
+              "signal_count": 3968,
+              "settled_count": 129,
+              "average_net_return": 0.0147224993751938,
+              "median_net_return": -0.0333972603,
+              "win_rate": 0.40310077519379844,
+              "profit_factor": 1.440900710852142,
+              "stop_loss_rate": 0.43410852713178294,
+              "max_drawdown_equal_weight": -0.7089020160999995
             }
           }
         ],
@@ -525,7 +525,7 @@
       "gate": {
         "status": "collecting",
         "checks": {
-          "historical_at_least_30": false,
+          "historical_at_least_30": true,
           "forward_at_least_20": false,
           "positive_stress_average": false,
           "profit_factor_at_least_1_2": false,
@@ -659,53 +659,9 @@
         }
       }
     },
-    "p2.30_d2_reclaim_hv_v1": {
-      "sector_confirmation": {
-        "False": {
-          "candidate_count": 12,
-          "confirmed_entry_count": 0,
-          "settled_count": 0,
-          "no_entry_count": 9,
-          "data_incomplete_count": 3,
-          "average_net_return": null,
-          "median_net_return": null,
-          "win_rate": null,
-          "profit_factor": null,
-          "stop_loss_rate": null,
-          "max_drawdown_equal_weight": null,
-          "largest_winner_profit_contribution": null
-        },
-        "True": {
-          "candidate_count": 5,
-          "confirmed_entry_count": 0,
-          "settled_count": 0,
-          "no_entry_count": 1,
-          "data_incomplete_count": 4,
-          "average_net_return": null,
-          "median_net_return": null,
-          "win_rate": null,
-          "profit_factor": null,
-          "stop_loss_rate": null,
-          "max_drawdown_equal_weight": null,
-          "largest_winner_profit_contribution": null
-        }
-      },
-      "risk_distance": {
-        "資料不足": {
-          "candidate_count": 17,
-          "confirmed_entry_count": 0,
-          "settled_count": 0,
-          "no_entry_count": 10,
-          "data_incomplete_count": 7,
-          "average_net_return": null,
-          "median_net_return": null,
-          "win_rate": null,
-          "profit_factor": null,
-          "stop_loss_rate": null,
-          "max_drawdown_equal_weight": null,
-          "largest_winner_profit_contribution": null
-        }
-      }
+    "p2.31_d2_reclaim_primary_gap_v1": {
+      "sector_confirmation": {},
+      "risk_distance": {}
     }
   },
   "notification_policy": "只在第20個判斷日中期檢查或正式門檻達成時通知；不發送影子買進訊號。",
