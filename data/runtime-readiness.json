@@ -1,6 +1,6 @@
 {
   "schema_version": "p2.20.1",
-  "checked_at": "2026-11-12T23:20:04.455302+08:00",
+  "checked_at": "2026-11-13T09:10:07.133157+08:00",
   "phase": "d1",
   "status": "ok",
   "errors": [],
@@ -8,30 +8,26 @@
     "data": {
       "path": "/Users/suh/.local/share/tw-stock-runtime/tw-market-data",
       "exists": true,
-      "before_commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
-      "dirty_before_sync": false,
-      "ignored_generated_changes_before_sync": [
-        "data/reference/twse_holiday_calendar_2026.json"
-      ],
-      "sync_exit_code": 0,
-      "sync_message": "Already up to date.",
-      "commit": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
-      "origin_main": "85fb69ed68405f5ddf4dabce6b037d826af5ad80",
-      "dirty_after_sync": false,
-      "ignored_generated_changes_after_sync": [
-        "data/reference/twse_holiday_calendar_2026.json"
-      ]
-    },
-    "pages": {
-      "path": "/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook",
-      "exists": true,
-      "before_commit": "856cb1ca6441d44408227dcbe80d5f5bbf34acd1",
+      "before_commit": "d53527f4b207b54e5e716ad3a6aee9a7cbf9cca2",
       "dirty_before_sync": false,
       "ignored_generated_changes_before_sync": [],
       "sync_exit_code": 0,
       "sync_message": "Already up to date.",
-      "commit": "856cb1ca6441d44408227dcbe80d5f5bbf34acd1",
-      "origin_main": "856cb1ca6441d44408227dcbe80d5f5bbf34acd1",
+      "commit": "d53527f4b207b54e5e716ad3a6aee9a7cbf9cca2",
+      "origin_main": "d53527f4b207b54e5e716ad3a6aee9a7cbf9cca2",
+      "dirty_after_sync": false,
+      "ignored_generated_changes_after_sync": []
+    },
+    "pages": {
+      "path": "/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook",
+      "exists": true,
+      "before_commit": "46f7fb24a7b63db0c30d7d1b6f58f7e6c0df1245",
+      "dirty_before_sync": false,
+      "ignored_generated_changes_before_sync": [],
+      "sync_exit_code": 0,
+      "sync_message": "Already up to date.",
+      "commit": "46f7fb24a7b63db0c30d7d1b6f58f7e6c0df1245",
+      "origin_main": "46f7fb24a7b63db0c30d7d1b6f58f7e6c0df1245",
       "dirty_after_sync": false,
       "ignored_generated_changes_after_sync": []
     }
