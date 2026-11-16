@@ -110,10 +110,10 @@
     "afterhours": {
       "schema_version": "p2.20.3",
       "phase": "afterhours",
-      "date": "2026-11-13",
-      "scheduled_at": "2026-11-13T15:30:00+08:00",
-      "checked_at": "2026-11-13T15:45:05.289700+08:00",
-      "actual_finished_at": "2026-11-13T15:31:47.777535+08:00",
+      "date": "2026-11-16",
+      "scheduled_at": "2026-11-16T15:30:00+08:00",
+      "checked_at": "2026-11-16T15:45:03.364728+08:00",
+      "actual_finished_at": "2026-11-16T15:32:50.310087+08:00",
       "status": "ok",
       "failed_step": null,
       "reasons": [],
@@ -145,57 +145,57 @@
       },
       "versions": {
         "preflight_data_commit": "d53527f4b207b54e5e716ad3a6aee9a7cbf9cca2",
-        "preflight_pages_commit": "1cc00f097efa497608c83030d5bca0a7f08abdc7",
-        "pages_local_commit": "337bc8d8f8cf9f04bdee617aa23252c1babb5f5c",
-        "pages_remote_commit": "337bc8d8f8cf9f04bdee617aa23252c1babb5f5c",
+        "preflight_pages_commit": "108c126c079ebcdd16e98a408808b27edacb7589",
+        "pages_local_commit": "df89cb45ec3b0579bf07e84242ae18244492171b",
+        "pages_remote_commit": "df89cb45ec3b0579bf07e84242ae18244492171b",
         "data_runtime_commit": "d53527f4b207b54e5e716ad3a6aee9a7cbf9cca2"
       },
       "retry": {
         "schema_version": "p2.20.2",
         "phase": "afterhours",
-        "date": "2026-11-13",
+        "date": "2026-11-16",
         "status": "ok",
         "retry_delay_seconds": 0,
         "attempts": [
           {
             "attempt": 1,
-            "started_at": "2026-11-13T15:30:05.278234+08:00",
-            "finished_at": "2026-11-13T15:31:47.777535+08:00",
+            "started_at": "2026-11-16T15:30:03.507334+08:00",
+            "finished_at": "2026-11-16T15:32:50.310087+08:00",
             "exit_code": 0,
-            "stdout_tail": "6-10-27\", \"2026-10-28\", \"2026-10-30\", \"2026-11-03\", \"2026-11-04\", \"2026-11-05\", \"2026-11-13\"], \"candidate_count\": 136, \"data_incomplete_count\": 0, \"provider_counts\": {\"Fugle\": 134, \"未取得完整分鐘線\": 2}, \"finmind_unavailable_observations\": 0, \"historical_backtest_allowed\": false, \"status\": \"insufficient_historical_coverage\", \"reason\": \"需有至少 60 個完整 D1 分鐘線判斷日才可重跑歷史分鐘回測；目前僅保留 forward 封存資料。\", \"source_policy\": \"同一股票日只使用單一來源；Fugle 近期 1 分鐘線優先，FinMind TaiwanStockKBar 僅在帳號授權時使用。\"}\n{\n  \"schema_version\": \"p2.30.0\",\n  \"decision_date\": \"2026-11-13\",\n  \"baseline_rule_version\": \"p2.11_v2\",\n  \"shadow_rule_versions\": [\n    \"p2.30_d1_confirmed_v1\",\n    \"p2.31_d2_reclaim_primary_gap_v1\"\n  ],\n  \"market_minute_verified\": true,\n  \"d1\": {\n    \"candidate_count\": 6,\n    \"confirmed_entry_count\": 0,\n    \"data_incomplete_count\": 0\n  },\n  \"d2\": {\n    \"active_watch_count\": 1,\n    \"confirmed_entry_count\": 1,\n    \"data_incomplete_count\": 0\n  },\n  \"allocated_count\": 0,\n  \"shadow_only\": true,\n  \"telegram_buy_alerts\": false,\n  \"minute_capture_attempts\": [\n    {\n      \"stock_id\": \"1528\",\n      \"attempts\": [\n        {\n          \"provider\": \"Fugle\",\n          \"row_count\": 265,\n          \"status\": \"usable\"\n        }\n      ],\n      \"row_count\": 265\n    }\n  ]\n}\n{\"output\": \"/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook/data/p230-shadow-evaluation.json\", \"d1_records\": 180, \"d2_records\": 1}\n{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   39ae113..337bc8d  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"afterhours\", \"date\": \"2026-11-13\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main 337bc8d] data: publish 2026-11-13 after-hours dashboard\\n 7 files changed, 549 insertions(+), 94 deletions(-)\\n create mode 100644 data/daily/2026-11-13.json\", \"recorded_at\": \"2026-11-13T15:31:46.097081+08:00\"}\n{\"p3_development_gate\": \"not_ready\", \"p230_shadow_gate\": \"not_ready\"}\n",
+            "stdout_tail": "6-10-28\", \"2026-10-30\", \"2026-11-03\", \"2026-11-04\", \"2026-11-05\", \"2026-11-13\", \"2026-11-16\"], \"candidate_count\": 138, \"data_incomplete_count\": 0, \"provider_counts\": {\"Fugle\": 136, \"未取得完整分鐘線\": 2}, \"finmind_unavailable_observations\": 0, \"historical_backtest_allowed\": false, \"status\": \"insufficient_historical_coverage\", \"reason\": \"需有至少 60 個完整 D1 分鐘線判斷日才可重跑歷史分鐘回測；目前僅保留 forward 封存資料。\", \"source_policy\": \"同一股票日只使用單一來源；Fugle 近期 1 分鐘線優先，FinMind TaiwanStockKBar 僅在帳號授權時使用。\"}\n{\n  \"schema_version\": \"p2.30.0\",\n  \"decision_date\": \"2026-11-16\",\n  \"baseline_rule_version\": \"p2.11_v2\",\n  \"shadow_rule_versions\": [\n    \"p2.30_d1_confirmed_v1\",\n    \"p2.31_d2_reclaim_primary_gap_v1\"\n  ],\n  \"market_minute_verified\": true,\n  \"d1\": {\n    \"candidate_count\": 3,\n    \"confirmed_entry_count\": 0,\n    \"data_incomplete_count\": 2\n  },\n  \"d2\": {\n    \"active_watch_count\": 1,\n    \"confirmed_entry_count\": 1,\n    \"data_incomplete_count\": 0\n  },\n  \"allocated_count\": 0,\n  \"shadow_only\": true,\n  \"telegram_buy_alerts\": false,\n  \"minute_capture_attempts\": [\n    {\n      \"stock_id\": \"1528\",\n      \"attempts\": [\n        {\n          \"provider\": \"Fugle\",\n          \"row_count\": 260,\n          \"status\": \"usable\"\n        }\n      ],\n      \"row_count\": 260\n    }\n  ]\n}\n{\"output\": \"/Users/suh/.local/share/tw-stock-runtime/tw-limitup-trading-playbook/data/p230-shadow-evaluation.json\", \"d1_records\": 183, \"d2_records\": 1}\n{\"status\": \"published\", \"failed_step\": null, \"reason\": \"\", \"detail\": \"To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\\n   6151a7a..df89cb4  main -> main\", \"schema_version\": \"p2.20.4\", \"phase\": \"afterhours\", \"date\": \"2026-11-16\", \"local_data_saved\": true, \"local_commit_created\": true, \"local_commit_detail\": \"[main df89cb4] data: publish 2026-11-16 after-hours dashboard\\n 7 files changed, 503 insertions(+), 46 deletions(-)\\n create mode 100644 data/daily/2026-11-16.json\", \"recorded_at\": \"2026-11-16T15:32:33.937468+08:00\"}\n{\"p3_development_gate\": \"not_ready\", \"p230_shadow_gate\": \"not_ready\"}\n",
             "stderr_tail": ""
           }
         ],
-        "recorded_at": "2026-11-13T15:31:47.777629+08:00"
+        "recorded_at": "2026-11-16T15:32:50.310180+08:00"
       },
       "publication": {
         "status": "published",
         "failed_step": null,
         "reason": "",
-        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   39ae113..337bc8d  main -> main",
+        "detail": "To https://github.com/hiroman2526/tw-limitup-trading-playbook.git\n   6151a7a..df89cb4  main -> main",
         "schema_version": "p2.20.4",
         "phase": "afterhours",
-        "date": "2026-11-13",
+        "date": "2026-11-16",
         "local_data_saved": true,
         "local_commit_created": true,
-        "local_commit_detail": "[main 337bc8d] data: publish 2026-11-13 after-hours dashboard\n 7 files changed, 549 insertions(+), 94 deletions(-)\n create mode 100644 data/daily/2026-11-13.json",
-        "recorded_at": "2026-11-13T15:31:46.097081+08:00"
+        "local_commit_detail": "[main df89cb4] data: publish 2026-11-16 after-hours dashboard\n 7 files changed, 503 insertions(+), 46 deletions(-)\n create mode 100644 data/daily/2026-11-16.json",
+        "recorded_at": "2026-11-16T15:32:33.937468+08:00"
       },
       "freshness": {
         "schema_version": "p2.21",
-        "checked_at": "2026-11-13T15:45:05.327265+08:00",
-        "as_of_date": "2026-11-13",
+        "checked_at": "2026-11-16T15:45:03.401249+08:00",
+        "as_of_date": "2026-11-16",
         "calendar_source": "official_cache",
         "market_day": {
-          "date": "2026-11-13",
+          "date": "2026-11-16",
           "status": "trading",
           "source": "weekday",
           "reason": "一般交易日"
         },
-        "previous_trading_date": "2026-11-12",
-        "next_trading_date": "2026-11-16",
-        "latest_data_date": "2026-11-13",
-        "expected_latest_data_date": "2026-11-13",
+        "previous_trading_date": "2026-11-13",
+        "next_trading_date": "2026-11-17",
+        "latest_data_date": "2026-11-16",
+        "expected_latest_data_date": "2026-11-16",
         "is_stale": false,
         "expectations": {
           "d1_0915": {
